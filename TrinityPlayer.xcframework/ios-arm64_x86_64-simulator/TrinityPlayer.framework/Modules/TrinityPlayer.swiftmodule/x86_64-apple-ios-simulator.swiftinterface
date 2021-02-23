@@ -11,7 +11,7 @@ import WebKit
   public static func newInstance() -> TrinityPlayer.TrinityProtocol
   weak public var delegate: TrinityPlayer.TrinityDelegate?
   public func invalidate()
-  public func render(parentViewController: UIKit.UIViewController, sourceView: UIKit.UIView, fabSourceView: UIKit.UIView?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?, isDebug: Swift.Bool)
+  public func render(parentViewController: UIKit.UIViewController, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?, isDebug: Swift.Bool)
   @objc deinit
 }
 public enum TrinityState {
@@ -51,7 +51,7 @@ public protocol TrinityDelegate : AnyObject {
 }
 public protocol TrinityProtocol {
   var delegate: TrinityPlayer.TrinityDelegate? { get set }
-  func render(parentViewController: UIKit.UIViewController, sourceView: UIKit.UIView, fabSourceView: UIKit.UIView?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?, isDebug: Swift.Bool)
+  func render(parentViewController: UIKit.UIViewController, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?, isDebug: Swift.Bool)
   func invalidate()
 }
 extension TrinityPlayer.TrinityState : Swift.Equatable {}
