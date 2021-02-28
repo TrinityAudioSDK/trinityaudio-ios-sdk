@@ -7,11 +7,11 @@ import Swift
 @_exported import TrinityPlayer
 import UIKit
 import WebKit
-@_hasMissingDesignatedInitializers public class Trinity : TrinityPlayer.TrinityProtocol {
-  public static func newInstance() -> TrinityPlayer.TrinityProtocol
-  weak public var delegate: TrinityPlayer.TrinityDelegate?
+@_hasMissingDesignatedInitializers public class TrinityAudio : TrinityPlayer.TrinityAudioProtocol {
+  public static func newInstance() -> TrinityPlayer.TrinityAudioProtocol
+  weak public var delegate: TrinityPlayer.TrinityAudioDelegate?
   public func invalidate()
-  public func render(parentViewController: UIKit.UIViewController, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?, isDebug: Swift.Bool)
+  public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
   @objc deinit
 }
 public enum TrinityState {
@@ -24,13 +24,13 @@ public enum TrinityState {
   public func hash(into hasher: inout Swift.Hasher)
 }
 public enum TrinityParams : Swift.String {
-  case campaignId
   case appName
   case appVersion
   case appBundleId
   case appIDFA
   case darkModeisOn
   case trinityVersion
+  case isDebug
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -44,14 +44,14 @@ public enum TrinityError : Swift.Error {
   case containerViewNotLoaded
   case somethingWrong(error: Swift.Error?)
 }
-public protocol TrinityDelegate : AnyObject {
-  func trinity(service: TrinityPlayer.TrinityProtocol, receiveError: TrinityPlayer.TrinityError)
-  func trinity(service: TrinityPlayer.TrinityProtocol, detectUpdateForContentHeight height: Swift.Float, inState state: TrinityPlayer.TrinityState)
-  func trinity(service: TrinityPlayer.TrinityProtocol, didCheckCookie cookieData: [Swift.String : Any])
+public protocol TrinityAudioDelegate : AnyObject {
+  func trinity(service: TrinityPlayer.TrinityAudioProtocol, receiveError: TrinityPlayer.TrinityError)
+  func trinity(service: TrinityPlayer.TrinityAudioProtocol, detectUpdateForContentHeight height: Swift.Float, inState state: TrinityPlayer.TrinityState)
+  func trinity(service: TrinityPlayer.TrinityAudioProtocol, didCheckCookie cookieData: [Swift.String : Any])
 }
-public protocol TrinityProtocol {
-  var delegate: TrinityPlayer.TrinityDelegate? { get set }
-  func render(parentViewController: UIKit.UIViewController, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?, isDebug: Swift.Bool)
+public protocol TrinityAudioProtocol {
+  var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
+  func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
   func invalidate()
 }
 extension TrinityPlayer.TrinityState : Swift.Equatable {}
