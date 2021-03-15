@@ -29,6 +29,7 @@ public enum TrinityParams : Swift.String {
   case appBundleId
   case appIDFA
   case darkModeisOn
+  case SDKVersion
   case trinityVersion
   case isDebug
   public typealias RawValue = Swift.String

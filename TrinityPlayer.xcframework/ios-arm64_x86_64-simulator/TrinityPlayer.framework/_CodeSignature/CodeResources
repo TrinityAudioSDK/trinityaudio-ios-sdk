@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		i9icfWOZNVuH7wFxANyX491cXvA=
+		C2vMHU0rk2Npb+el2F21jwx9Sw4=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		08pqTSyCM0jcd549ygbrnREJckc=
+		Te4OP9b5KtTZJEMEfLhts2gutlQ=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vnp4hOaHG7AC0rfJH63o7AtA8sk=
+		SiLBJGTk0AfwcWfqGBTVGR0EpmU=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		08pqTSyCM0jcd549ygbrnREJckc=
+		Te4OP9b5KtTZJEMEfLhts2gutlQ=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		vnp4hOaHG7AC0rfJH63o7AtA8sk=
+		SiLBJGTk0AfwcWfqGBTVGR0EpmU=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6M8WnSY9msYrwvWAxdeVYBIU440=
+		GOQIwtb4t+Cog/B82c+KogN04jw=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pJ414AoG+A9OxZa8kVUNYP7EHbE=
+		3ZymeCIS9mt+gBspiuq8cxhZy8Q=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		6M8WnSY9msYrwvWAxdeVYBIU440=
+		GOQIwtb4t+Cog/B82c+KogN04jw=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		pJ414AoG+A9OxZa8kVUNYP7EHbE=
+		3ZymeCIS9mt+gBspiuq8cxhZy8Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/Go4-qm-EiM-view-6OK-cw-yGm.nib</key>
 		<data>
-		oByK+RMQNa2CUnHreUwsyB4mfww=
+		XLOjMCkKP9DIRv+4eLFi8Sql8LM=
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/TrinityPlayerViewController.nib</key>
 		<data>
-		dguqR8G93FyeBWkS9caRxDfQle4=
+		Wi1dDLeoxB588RrErSqgjAFpz7Q=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -108,14 +108,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X5HS7zEI9Vjx3SVk0rjA2iAbdaqqD6zu2hNNha7Xh1E=
+			jk3TRDA11s8EC/xFbrh91S7gZkl1B6ek+y5uknRjPs0=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c905kkFsn1tMuT7Bj81RhZYmmBzqDakvqDJxi9/p2ew=
+			WRshRPyCQCv1nY30uGzEVWOgzpyEmYDCQtLwon5oCEw=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftdoc</key>
@@ -129,14 +129,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X5HS7zEI9Vjx3SVk0rjA2iAbdaqqD6zu2hNNha7Xh1E=
+			jk3TRDA11s8EC/xFbrh91S7gZkl1B6ek+y5uknRjPs0=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c905kkFsn1tMuT7Bj81RhZYmmBzqDakvqDJxi9/p2ew=
+			WRshRPyCQCv1nY30uGzEVWOgzpyEmYDCQtLwon5oCEw=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -150,14 +150,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JqEjKXspRrD9LEpEJFS5GlRRab/pEQrWW/wTJLcEwU4=
+			PvfUDdJhb9U4MtDEIJwoTEOCNto0nNTb0+L7uhu2GpU=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BYINfI+JqRQI/itH+DA7HluYYV5nG8sLie9hCRB+6Kg=
+			1uLqp3yyMeiqFNlQq1PxoJptluGdR4n2J3EGB6pPtGQ=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftdoc</key>
@@ -171,14 +171,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JqEjKXspRrD9LEpEJFS5GlRRab/pEQrWW/wTJLcEwU4=
+			PvfUDdJhb9U4MtDEIJwoTEOCNto0nNTb0+L7uhu2GpU=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BYINfI+JqRQI/itH+DA7HluYYV5nG8sLie9hCRB+6Kg=
+			1uLqp3yyMeiqFNlQq1PxoJptluGdR4n2J3EGB6pPtGQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -192,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QSz9efhWO23lWefF89TUci8jbeqA3sIqmiSagT7rWbc=
+			fkGDgS7RSSysGKQZdezCdD3UWvBAZi6k/DCdoHQIoFo=
 			</data>
 		</dict>
 		<key>TrinityPlayerStoryboard.storyboardc/Info.plist</key>
@@ -206,7 +206,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BhomTqVzhpRlmH8yq6u2DPviKo1dl+lPvQuDhAXriLo=
+			I0MDIxK3qXEWLawqMTQCJ4aKbTYlZVBE3Rf+vnag2FM=
 			</data>
 		</dict>
 	</dict>
