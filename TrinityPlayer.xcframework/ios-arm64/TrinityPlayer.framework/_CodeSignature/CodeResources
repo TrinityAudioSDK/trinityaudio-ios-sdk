@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		n5n2GgMIFrHAhJrVakwl8HLtNbI=
+		sFuMtxWGRCkrvvmakc8Wh7V27gc=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		jUQrU41Shhj/A5pqLetjbSnLPOo=
+		76S+zj3Mi9XLg2PFIeDsNBJ8Wwc=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		/eg3O0HS3eh/FbsM9UG/Up8pmwM=
+		Me5+BnIkJrdGsuB0dkr2Qh2twLY=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		3eIHRSPHrLtS4H7e1Oo4yqJAhu8=
+		gkOHPXUPPK63sU/AT5ysub5ku5s=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		jUQrU41Shhj/A5pqLetjbSnLPOo=
+		76S+zj3Mi9XLg2PFIeDsNBJ8Wwc=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		/eg3O0HS3eh/FbsM9UG/Up8pmwM=
+		Me5+BnIkJrdGsuB0dkr2Qh2twLY=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		3eIHRSPHrLtS4H7e1Oo4yqJAhu8=
+		gkOHPXUPPK63sU/AT5ysub5ku5s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/Go4-qm-EiM-view-6OK-cw-yGm.nib</key>
 		<data>
-		/rkGgZcEuyF+EUDUFUyLNBKDnZ8=
+		OMeHY1df9HWwqotseR9fivwlemI=
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -54,7 +54,179 @@
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/TrinityPlayerViewController.nib</key>
 		<data>
-		5W/GZ2luhFZSv/dWVjmo9RThyNs=
+		Uk+wS1BcE/gy6R+yJ4WCB+M85gk=
+		</data>
+		<key>test-automation/.gitignore</key>
+		<data>
+		trIqChZWFiJNhXdncJ+JX3YLQ8c=
+		</data>
+		<key>test-automation/HowToRunTestsLocaly.md</key>
+		<data>
+		7oyh8vmAKga8+qvIwVNzqSoj7zk=
+		</data>
+		<key>test-automation/MacAppiumEnvironmentSetup.md</key>
+		<data>
+		lAoqdHhBe1dVlBTfBOOTU3gluvs=
+		</data>
+		<key>test-automation/pom.xml</key>
+		<data>
+		z1psoiuoDt2Pe+C2reKMtFQ6MKw=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/driver/Driver.java</key>
+		<data>
+		Q6FPBOuAwYa2fvEUSamWxMny3Aw=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/enums/NativeAppAttributesEnum.java</key>
+		<data>
+		cBYUv8hxNM0jboSmBO5949ORYEk=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/BasePage.java</key>
+		<data>
+		MtnEPlbAsIHt2FDJY8qLU6Vi7U0=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/CustomAbstractElement.java</key>
+		<data>
+		cSFSNjl6igzfz4uAznjLN53b3qs=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/CustomFieldDecorator.java</key>
+		<data>
+		SYHYAsYDIsp7wVfgEsQL/QUWVVk=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/FactoryUtils.java</key>
+		<data>
+		y22zycEiR2XQmaW0Ha3Ldyt+cZY=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/ListInvocationHandler.java</key>
+		<data>
+		UzDe5k5I2Txw0+qwYiSdzuY2NHE=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/DemoMainPage.java</key>
+		<data>
+		eJMiSwxJUEi+H9I2D9bmiRyRrHE=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/MainSDKUsagePage.java</key>
+		<data>
+		n+2wRP6ipiDQMTCvZIp9nVcicXY=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/MultiPlayerUsagePage.java</key>
+		<data>
+		bTrVbXqKnjN7HODauPu5Tbj2W4s=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/PlayerWebView.java</key>
+		<data>
+		TbSd+rOkHnE1Uv7Gq9xC3BDLYuw=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerBlock.java</key>
+		<data>
+		CeSzT7/eg2PSyQOG2zZsjPfQT2U=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerLanguageSelectBlock.java</key>
+		<data>
+		dQHNn2l2HUr+eFVtRp1FHftixvs=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerSettingsBlock.java</key>
+		<data>
+		SzaMl4Ojv4attJaoYfzBgCjJqiw=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/platformAPIs/KobitonAPIs.java</key>
+		<data>
+		JCTzgE6k2UDsjrfDc4GPVywpc+4=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Button.java</key>
+		<data>
+		cDjJlKRx65NaMXRT0sEOx3UDyRs=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Label.java</key>
+		<data>
+		Mg2h+qMx5JzdhqGPH+wl3DG2dQw=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Link.java</key>
+		<data>
+		2RfnedKh0BSrJIJAkGF4UlEkL+k=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Section.java</key>
+		<data>
+		aN4G8H3NcPbUQEKgUL1A6TMdDVg=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Select.java</key>
+		<data>
+		hcXLmHaH9txFoHCMCYR4pZn2bD8=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Toggle.java</key>
+		<data>
+		a0zVBtYaiIcqro0dbkrocazu4FU=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/Assertions.java</key>
+		<data>
+		OhwGcFEfGaQ22ziAOL1QxdbAW4o=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/CommonSteps.java</key>
+		<data>
+		Dv/gBDRNJxhzN2M/wOIDLhhh41g=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/CustomCucumberWithSerenity.java</key>
+		<data>
+		d9AfXXvdnb4iAfWbyLCymkTKPnk=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/CustomRunListener.java</key>
+		<data>
+		zoG8Tou0vb7TAZkmQr+0rNPT1z8=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/ProjectPropertiesUtils.java</key>
+		<data>
+		+vhWhsxpGedv2NGpZoppjscoeCg=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/StepMonitor.java</key>
+		<data>
+		ue1VCN2VIMV/73bMD8dDGXRjeBQ=
+		</data>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/Waiters.java</key>
+		<data>
+		WIgXD618qN42TQ+N5MH4wC+v8/s=
+		</data>
+		<key>test-automation/src/main/resources/project.properties</key>
+		<data>
+		YZ/BcihZ0rGKYkZU/mhUiBFqDMI=
+		</data>
+		<key>test-automation/src/test/java/com/thetimmedia/reserverunners/RunnerBrowserStackTest.java</key>
+		<data>
+		drtXXcTFle9Fhsnk5nL6ETho4po=
+		</data>
+		<key>test-automation/src/test/java/com/thetimmedia/runner/RunnerKobitonTest.java</key>
+		<data>
+		v1VvVTWPL1noboLFEVTthrfnb20=
+		</data>
+		<key>test-automation/src/test/java/com/thetimmedia/runner/RunnerLocalTest.java</key>
+		<data>
+		6/B+H3/uERdoABsH5Zoc4VOOfXQ=
+		</data>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/CommonStepDefinitions.java</key>
+		<data>
+		Oroc16YziGJXUZinLvMF7snxF/c=
+		</data>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/MainSDKUsageStepDefinitions.java</key>
+		<data>
+		58nwry7eewu3YOZGYAv7YH1aHas=
+		</data>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/MultiPlayerUsageStepDefinitions.java</key>
+		<data>
+		HOwmfxrGk0SXT6KX4tU4+mKPABw=
+		</data>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/PlayerStepDefinitions.java</key>
+		<data>
+		oQvdZrMSMzH6DtF6V9HbR3B2huU=
+		</data>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/SettingsStepDefinitions.java</key>
+		<data>
+		g88aeKGbS09JjlXLt0enzFczaTc=
+		</data>
+		<key>test-automation/src/test/resources/features/DemoAppMainSDKUsage.feature</key>
+		<data>
+		hD1b/ICQUboEY2P1f0ESHLm7XE4=
+		</data>
+		<key>test-automation/src/test/resources/features/DemoAppMultiPlayersUsage.feature</key>
+		<data>
+		4ZYqRM1WVUhtvw4iU4ucoBTWuJM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -77,42 +249,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XWyUbVySW8zbWd24t3A0e/TzKk85PaAjhmnQLY7Yu1A=
+			1ZiAZ8/nWmtQ8gwZTox3SP2Us0nquF7M40E54P+qv3I=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2rkO424ai2PeHcMvWBFNLPBQ3Dl6yYYE9pLgJlc6soI=
+			jYXkLUpGuRb2xvlAzDbtfD8bxlhUeNIMO/y2p4KlESQ=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n4YYarIneTv5SAPdCVSgaQHXGMMgT5zryLPiSMXqwkI=
+			fxOdFDgtvUOXVSiuH31w3bJf7GorAf4aUC/UNQtdEVA=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XWyUbVySW8zbWd24t3A0e/TzKk85PaAjhmnQLY7Yu1A=
+			1ZiAZ8/nWmtQ8gwZTox3SP2Us0nquF7M40E54P+qv3I=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2rkO424ai2PeHcMvWBFNLPBQ3Dl6yYYE9pLgJlc6soI=
+			jYXkLUpGuRb2xvlAzDbtfD8bxlhUeNIMO/y2p4KlESQ=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n4YYarIneTv5SAPdCVSgaQHXGMMgT5zryLPiSMXqwkI=
+			fxOdFDgtvUOXVSiuH31w3bJf7GorAf4aUC/UNQtdEVA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -126,7 +298,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			argO+y7flF1rME03xgfJHFTo3wEetDQBBMvNGH9bp2o=
+			VYKYN8no779QgIoUdz2BdflRC1oy3+dYdiJVvQuqdfI=
 			</data>
 		</dict>
 		<key>TrinityPlayerStoryboard.storyboardc/Info.plist</key>
@@ -140,7 +312,308 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lZPvpOrNh6odA6R2qYG4CZKq2WxT67rEfbGEMWSN4SQ=
+			TV+cKtdXBrBl7n+BkWJsBc1nKRO2c9SR9yS68gbKSF8=
+			</data>
+		</dict>
+		<key>test-automation/.gitignore</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ViVBffFPEy5wgfedYbJE+WHp6g218Ys3wUn72WioAwk=
+			</data>
+		</dict>
+		<key>test-automation/HowToRunTestsLocaly.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x0yM89oz4bvGXglHSd8Qz6/Jy1GIzUo83wu6pLV+eKA=
+			</data>
+		</dict>
+		<key>test-automation/MacAppiumEnvironmentSetup.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K9UM915LwuBtDKymyp//jwJAmzav8ZmJcTqJWmSPOXo=
+			</data>
+		</dict>
+		<key>test-automation/pom.xml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bTOVjZhK2BAl1rYUoAIl2D4vPHyHnMOCzVcFHydedpU=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/driver/Driver.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4vNzFL1XooLZi6IvDC3OlhPWrxlCI23VXXYi3g9Wf3c=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/enums/NativeAppAttributesEnum.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bI7KpPd4fYAJ6ye4DgiJC92fThuP6Afq8CTz3E2pj/4=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/BasePage.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QsJL8bgmLc873OjkE4956ioYv4vqXl2IMuZDCen2j8M=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/CustomAbstractElement.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ALU5SdvZgGe98eAoO/jf3bJLh2YN1T8fPg8d69diLEI=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/CustomFieldDecorator.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OTKegFSwlg/bHnozKwoeHYVn99HsK7By/N08ctvEK8Y=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/FactoryUtils.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Tv4KAfVusdhkQl8qkixYF1O7Vwa7/qGxvfdb47BYGkc=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/fielddecorator/ListInvocationHandler.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BFkCYLpcwRgfydfn3obYHUdrmP+PlzLkg4nOlp8Ds7U=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/DemoMainPage.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fAHkhVbhL8vOW2NjrNmMsIhbNobsUjy/mgwFDT6Ro7s=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/MainSDKUsagePage.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7Wo8E5zH2+nES+IqGnomkjrb9d62RbXBAysPqRQnQQU=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/MultiPlayerUsagePage.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gPCWi5qBWpHamJOFoXyH3G4ISSLrLHsEvbFZhniWcYw=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/PlayerWebView.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m0ipzi9NDpQMFgHQds5K6EyBH3x9lYfeOscH4XIQVQs=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerBlock.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k3rqCLmStuOeur5SDSsLJOj6csdwbw7IV8pU+3hRFfo=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerLanguageSelectBlock.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rgkzXMyjCZDrpL119WJRI/dpYeGpMez0sxHllq7IHN8=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerSettingsBlock.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ND1SRzUssuXVoU1hfVY8KCaHDu4x/J7Fu57byeOJorE=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/platformAPIs/KobitonAPIs.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7bXwVE0D/qaJtENxlGOSAUB4TWLmOQfclT2nwF4GGBM=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Button.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1Ws5ZERv1Dm9QYh3/6vgkFpS/UA23qGvVsoF1N1afE4=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Label.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lZ2/o/S2GOkTGzk3OjtVioJKpqjg+aThWhtAu1p1v/U=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Link.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YaGC/jc5bPjNNxpN1wZz5rJfHxr6TVNDm3AykmWL4As=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Section.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qb8otdyGFRwAKPgDwuASjkAZpf0xelT4xkwaIm508Ds=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Select.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y28M8pLZs+XzEg47hh7HthQsC3+RHVCmBmofgXqNK44=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/types/Toggle.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			i+8n/1ifPlLGgtsP3ncO9OWadKC/8wwS18t3dvy/yJg=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/Assertions.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			laUf9o/lvDKPagD3foLstYcXSJhYoQhx13qjgLZ9A/c=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/CommonSteps.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HYmo44vOntWL4WPvTK3EMy6g+fIH+JhyFV0OUBWCO9A=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/CustomCucumberWithSerenity.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/Z0bUFJ/u6ksJ8bOwgsNUlXumrvC7Y0UcRBoBAB5rKs=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/CustomRunListener.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qvDzmW6usO7OCJbOT75PI3ijT4nwugSrNobws5E1S0I=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/ProjectPropertiesUtils.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WKBpkVFxBU3W32RZbDWIYYX3hKQWasYUTb+PGWhgNRM=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/StepMonitor.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iMcgr4SHXxbb2EpNr8K0DYhOCkNm5avrkU8t+pKRJTo=
+			</data>
+		</dict>
+		<key>test-automation/src/main/java/com/thetimmedia/utils/Waiters.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W8PgEuPHQPvAaRlL617ozYzDcr64au9+6Ge58Cuq5hc=
+			</data>
+		</dict>
+		<key>test-automation/src/main/resources/project.properties</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9iFh4KVMUgMFQksCxrft4yXg9CYtBNv9sqWleiIWzy8=
+			</data>
+		</dict>
+		<key>test-automation/src/test/java/com/thetimmedia/reserverunners/RunnerBrowserStackTest.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+JWTIuXnVD5aJp6O6E1j70RnUzPdObdMOK85hQojCjM=
+			</data>
+		</dict>
+		<key>test-automation/src/test/java/com/thetimmedia/runner/RunnerKobitonTest.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NTA140DD9GAgUsQweyOXi6bj5vZuu0x7OU8QdOD9Esk=
+			</data>
+		</dict>
+		<key>test-automation/src/test/java/com/thetimmedia/runner/RunnerLocalTest.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g0K8OpL4EIK03ny/RZZNwAEPGBUTlncsJeulK6/jVUg=
+			</data>
+		</dict>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/CommonStepDefinitions.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FB2yqOB7xR80mWaZcgU5Thc7j8sio3DrGYpVaLp5uKo=
+			</data>
+		</dict>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/MainSDKUsageStepDefinitions.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MHg8TYJ64cBMAEnJdbTCSAtqNoK7UKUYDjVqZQA7SCA=
+			</data>
+		</dict>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/MultiPlayerUsageStepDefinitions.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K+seH86cFET7eBk0N1nLVo7DsYiMpU+nwl0UMcSXNpw=
+			</data>
+		</dict>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/PlayerStepDefinitions.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			05RCyesBKrKsxT0rKbzIesoHFDxhONYGgevdpVDsGg0=
+			</data>
+		</dict>
+		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/SettingsStepDefinitions.java</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iXkuD3ob4ig0zOPWn6SePwI/uBHfEQsmfrF42wlPR2w=
+			</data>
+		</dict>
+		<key>test-automation/src/test/resources/features/DemoAppMainSDKUsage.feature</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ipFCFBPpi0XAYp0CXLmF9pCWyz8pUXB68LOuoMbClbE=
+			</data>
+		</dict>
+		<key>test-automation/src/test/resources/features/DemoAppMultiPlayersUsage.feature</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			F+O1Nh8WTjsH4lG+0QmVS4to7ayiJM60VEGemfuiUto=
 			</data>
 		</dict>
 	</dict>
