@@ -1,0 +1,11 @@
+framework module TrinityPlayer {
+  umbrella header "TrinityPlayer.h"
+
+  export *
+  module * { export * }
+}
+
+module TrinityPlayer.Swift {
+    header "TrinityPlayer-Swift.h"
+    requires objc
+}
