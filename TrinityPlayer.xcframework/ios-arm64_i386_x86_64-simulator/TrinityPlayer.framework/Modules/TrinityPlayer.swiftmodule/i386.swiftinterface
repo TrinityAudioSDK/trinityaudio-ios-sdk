@@ -12,6 +12,9 @@ import WebKit
   weak public var delegate: TrinityPlayer.TrinityAudioDelegate?
   public func invalidate()
   public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+  public func evaluate(javaScript: Swift.String)
+  public func pause(playerID maybePlayerID: Swift.String?)
+  public func pauseAll()
   @objc deinit
 }
 public enum TrinityState {
@@ -49,10 +52,14 @@ public protocol TrinityAudioDelegate : AnyObject {
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, receiveError: TrinityPlayer.TrinityError)
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, detectUpdateForContentHeight height: Swift.Float, inState state: TrinityPlayer.TrinityState)
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, didCheckCookie cookieData: [Swift.String : Any])
+  func trinity(service: TrinityPlayer.TrinityAudioProtocol, didReceivePostMessage: [Swift.String : Any])
 }
 public protocol TrinityAudioProtocol {
   var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
   func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+  func evaluate(javaScript: Swift.String)
+  func pause(playerID: Swift.String?)
+  func pauseAll()
   func invalidate()
 }
 extension TrinityPlayer.TrinityState : Swift.Equatable {}
