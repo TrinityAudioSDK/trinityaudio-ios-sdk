@@ -27,7 +27,7 @@ You can choose between:
     [https://github.com/TrinityAudioSDK/trinityaudio-ios-sdk](https://github.com/TrinityAudioSDK/trinityaudio-ios-sdk)
 3.  Select the latest SDK version in the `Choose package options`
     view
-4.  Select `TrinityAudioSDK` to be added as a library in the `Add
+4.  Select `TrinityPlayer` to be added as a library in the `Add
     packages` view
 
 That’s it! You can now Import the library and use the SDK according

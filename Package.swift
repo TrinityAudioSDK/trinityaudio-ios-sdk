@@ -3,17 +3,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "TrinityAudioSDK",
+    name: "TrinityPlayer",
     products: [
         .library(
-            name: "TrinityAudioSDK",
-            targets: ["TrinityAudioSDK"]),
+            name: "TrinityPlayer",
+            targets: ["TrinityPlayer"]),
     ],
     dependencies: [
     ],
     targets: [
         .binaryTarget(
-            name: "TrinityAudioSDK",
+            name: "TrinityPlayer",
             path: "TrinityPlayer.xcframework")
     ]
 )
