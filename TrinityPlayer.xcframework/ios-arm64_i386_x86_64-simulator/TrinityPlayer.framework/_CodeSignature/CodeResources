@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WIx/cs5eGYGZQq+5QbLk9cF9Dgc=
+		pOOtzQEi9j/sX6Cq4/2OLJ1f3Yc=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/Go4-qm-EiM-view-6OK-cw-yGm.nib</key>
 		<data>
-		DA0KcEeyoo2aOXnwa2Hfm5o5lkk=
+		l0Od6PBQxC8BBlV832nWonqiSF4=
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/TrinityPlayerViewController.nib</key>
 		<data>
-		TjWwEeiGXyFSY+rjerNmbdpbANI=
+		EHGRw5Ih+5VrqFUyXHZlPHBwrpA=
 		</data>
 		<key>test-automation/.gitignore</key>
 		<data>
@@ -514,11 +514,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DA0KcEeyoo2aOXnwa2Hfm5o5lkk=
+			l0Od6PBQxC8BBlV832nWonqiSF4=
 			</data>
 			<key>hash2</key>
 			<data>
-			9V+nWw9GBDylW7xfzzfeIFF/3ObMttsqU4U3Y35FUN8=
+			5UhIe0ornP8Fh72bY+3Hl+noFdoMBuBi7onTUqNzpLY=
 			</data>
 		</dict>
 		<key>TrinityPlayerStoryboard.storyboardc/Info.plist</key>
@@ -536,11 +536,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TjWwEeiGXyFSY+rjerNmbdpbANI=
+			EHGRw5Ih+5VrqFUyXHZlPHBwrpA=
 			</data>
 			<key>hash2</key>
 			<data>
-			MtbU0RHx1KM0x+4rXgpQk8QioQoyYDHkk1IQu+u/wRM=
+			Lq8UfiU8NHg7FL82/yCZfwKYP8me5a1EK4Xz6xgxXZI=
 			</data>
 		</dict>
 		<key>test-automation/.gitignore</key>
