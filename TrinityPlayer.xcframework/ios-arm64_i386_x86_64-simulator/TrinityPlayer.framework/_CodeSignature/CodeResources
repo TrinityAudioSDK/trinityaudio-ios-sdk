@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TrinityPlayer-Swift.h</key>
 		<data>
-		PH57+LOJdOkXj10CGFaiOQd3KtI=
+		eB7+8U21C8iF+5Xl+8VXQZAIFqU=
 		</data>
 		<key>Headers/TrinityPlayer.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Kzp14+0Pk4LZs5925E5hddWdhUY=
+		2+ir7sBpN4rrx/IfWlJI0rjVs/I=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		O2Ph3r/5hXUPggGbKtofwCstEdM=
+		yBpFLzguMU5vMRkJgGwX/Y9l2LU=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		egcYqn/uNc8rFi9YyASQZ8VWGQY=
+		sUdLR0MZkoM+sWfuTisQQAuGXq8=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		O2Ph3r/5hXUPggGbKtofwCstEdM=
+		yBpFLzguMU5vMRkJgGwX/Y9l2LU=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		egcYqn/uNc8rFi9YyASQZ8VWGQY=
+		sUdLR0MZkoM+sWfuTisQQAuGXq8=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZEU9Xor4gduZzcLMV0kCTUdL4OU=
+		i4fM2i0qirJGYKomE9zRAXYOORs=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		c1n5UbEtnXLFTjj/py2zbPbyAXg=
+		6vi2CnK2OUoPP45NWhnZB+v2NTQ=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/i386.swiftinterface</key>
 		<data>
-		ZEU9Xor4gduZzcLMV0kCTUdL4OU=
+		i4fM2i0qirJGYKomE9zRAXYOORs=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/i386.swiftmodule</key>
 		<data>
-		c1n5UbEtnXLFTjj/py2zbPbyAXg=
+		6vi2CnK2OUoPP45NWhnZB+v2NTQ=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kL73HWrW/r1BZm3S4w/+OWJp3QE=
+		14svq5vWENAMHPNb5+7ytujl0A4=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m+VScQ5TKu17mpPstRJsRz9Ore4=
+		T+Oj1cGSO+Ov1xGcw6Buelhgh/w=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		kL73HWrW/r1BZm3S4w/+OWJp3QE=
+		14svq5vWENAMHPNb5+7ytujl0A4=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		m+VScQ5TKu17mpPstRJsRz9Ore4=
+		T+Oj1cGSO+Ov1xGcw6Buelhgh/w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/Go4-qm-EiM-view-6OK-cw-yGm.nib</key>
 		<data>
-		fsDaUaysFfBm6bjDeWGfL9DIB8Y=
+		7J1QrcaT90dvd4kdTLtMfkiStzw=
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>TrinityPlayerStoryboard.storyboardc/TrinityPlayerViewController.nib</key>
 		<data>
-		1iudEy802t/J5Z+j6fnTt9foOFM=
+		0QBJElCG5OK2bgprX9YeAMymtoc=
 		</data>
 		<key>test-automation/.gitignore</key>
 		<data>
@@ -115,6 +115,10 @@
 		<key>test-automation/MacAppiumEnvironmentSetup.md</key>
 		<data>
 		lAoqdHhBe1dVlBTfBOOTU3gluvs=
+		</data>
+		<key>test-automation/macRemote.md</key>
+		<data>
+		Hkn6nX9HslL1pWxbMq0blQTr1/Y=
 		</data>
 		<key>test-automation/pom.xml</key>
 		<data>
@@ -158,7 +162,7 @@
 		</data>
 		<key>test-automation/src/main/java/com/thetimmedia/pages/MultiPlayerUsagePage.java</key>
 		<data>
-		bTrVbXqKnjN7HODauPu5Tbj2W4s=
+		icKYdRYnPGBYSKe+gXfZrfP/Zo0=
 		</data>
 		<key>test-automation/src/main/java/com/thetimmedia/pages/PlayerWebView.java</key>
 		<data>
@@ -166,11 +170,11 @@
 		</data>
 		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerBlock.java</key>
 		<data>
-		CeSzT7/eg2PSyQOG2zZsjPfQT2U=
+		BKh6DjdlRnhbRfGDMPUD7lATxco=
 		</data>
 		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerLanguageSelectBlock.java</key>
 		<data>
-		dQHNn2l2HUr+eFVtRp1FHftixvs=
+		1y0Hf2mrWxRH9Nsvj3fcJH95UbI=
 		</data>
 		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerSettingsBlock.java</key>
 		<data>
@@ -210,7 +214,7 @@
 		</data>
 		<key>test-automation/src/main/java/com/thetimmedia/utils/CommonSteps.java</key>
 		<data>
-		Dv/gBDRNJxhzN2M/wOIDLhhh41g=
+		My8z4FHgOj9e/wLZIBdgrO57Z1k=
 		</data>
 		<key>test-automation/src/main/java/com/thetimmedia/utils/CustomCucumberWithSerenity.java</key>
 		<data>
@@ -242,11 +246,15 @@
 		</data>
 		<key>test-automation/src/test/java/com/thetimmedia/runner/RunnerKobitonTest.java</key>
 		<data>
-		QU0F43lgVbzjazCCq4GnHNVVARI=
+		ucwBnTWDVWXQls31Hu4Fq5y7Aw8=
 		</data>
 		<key>test-automation/src/test/java/com/thetimmedia/runner/RunnerLocalTest.java</key>
 		<data>
-		6/B+H3/uERdoABsH5Zoc4VOOfXQ=
+		AKz5cXqwIua5Nm/2HiQNpvNd14c=
+		</data>
+		<key>test-automation/src/test/java/com/thetimmedia/runner/RunnerRemoteTest.java</key>
+		<data>
+		shatu/Ad3nBtNxMpSTxBDVUc3+E=
 		</data>
 		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/CommonStepDefinitions.java</key>
 		<data>
@@ -262,7 +270,7 @@
 		</data>
 		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/PlayerStepDefinitions.java</key>
 		<data>
-		oQvdZrMSMzH6DtF6V9HbR3B2huU=
+		/b4SsRm4HCjo7JRpKVRZSpYO6fs=
 		</data>
 		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/SettingsStepDefinitions.java</key>
 		<data>
@@ -270,7 +278,7 @@
 		</data>
 		<key>test-automation/src/test/resources/features/DemoAppMainSDKUsage.feature</key>
 		<data>
-		hD1b/ICQUboEY2P1f0ESHLm7XE4=
+		2VKTN4AMIIohTq0t63FeVOb2yjg=
 		</data>
 		<key>test-automation/src/test/resources/features/DemoAppMultiPlayersUsage.feature</key>
 		<data>
@@ -283,11 +291,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PH57+LOJdOkXj10CGFaiOQd3KtI=
+			eB7+8U21C8iF+5Xl+8VXQZAIFqU=
 			</data>
 			<key>hash2</key>
 			<data>
-			XEvwyDohuP3QrB6+I9DBbLnLxL6NNNKsv10NNUOPz6w=
+			Icf0P34KioLowRkuBBkfPEDj5Xd/ReyA5h7xmf3EKJw=
 			</data>
 		</dict>
 		<key>Headers/TrinityPlayer.h</key>
@@ -316,22 +324,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O2Ph3r/5hXUPggGbKtofwCstEdM=
+			yBpFLzguMU5vMRkJgGwX/Y9l2LU=
 			</data>
 			<key>hash2</key>
 			<data>
-			AkcI670EqKxLUYIPn4QgEYz+yPQzHyqLiDWYp2tXBBo=
+			mbwMwk/azHSnMKoyTNNUceRcMbRUv+5lpJNrswPW7c4=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			egcYqn/uNc8rFi9YyASQZ8VWGQY=
+			sUdLR0MZkoM+sWfuTisQQAuGXq8=
 			</data>
 			<key>hash2</key>
 			<data>
-			D/BymD8z2/qxhLtWHX2mL1Ehj1g/ESSkCGsVWSA2H8c=
+			Bpo6WkSizpvnvfrjd9X+ZNtLtqz3jq8cM8ZvdHGrDTk=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftdoc</key>
@@ -349,22 +357,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O2Ph3r/5hXUPggGbKtofwCstEdM=
+			yBpFLzguMU5vMRkJgGwX/Y9l2LU=
 			</data>
 			<key>hash2</key>
 			<data>
-			AkcI670EqKxLUYIPn4QgEYz+yPQzHyqLiDWYp2tXBBo=
+			mbwMwk/azHSnMKoyTNNUceRcMbRUv+5lpJNrswPW7c4=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			egcYqn/uNc8rFi9YyASQZ8VWGQY=
+			sUdLR0MZkoM+sWfuTisQQAuGXq8=
 			</data>
 			<key>hash2</key>
 			<data>
-			D/BymD8z2/qxhLtWHX2mL1Ehj1g/ESSkCGsVWSA2H8c=
+			Bpo6WkSizpvnvfrjd9X+ZNtLtqz3jq8cM8ZvdHGrDTk=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -382,22 +390,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZEU9Xor4gduZzcLMV0kCTUdL4OU=
+			i4fM2i0qirJGYKomE9zRAXYOORs=
 			</data>
 			<key>hash2</key>
 			<data>
-			rmOKBDEqjNFTCuTL1w6N7mQA+/MbQrXourCUUU+/iTc=
+			2gFdnCc5lR5wmwVkWdl4nFJwoVhF5J97/v5qZ6k5xeo=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			c1n5UbEtnXLFTjj/py2zbPbyAXg=
+			6vi2CnK2OUoPP45NWhnZB+v2NTQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			u/69G/3Tc42MajZEhBVQKQDs6z4UH7nui47EwP9QK8U=
+			hP49aTH44lMeGGY8/+dV20V6/GqZvoxRsjEDdDcR/bw=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/i386.swiftdoc</key>
@@ -415,22 +423,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZEU9Xor4gduZzcLMV0kCTUdL4OU=
+			i4fM2i0qirJGYKomE9zRAXYOORs=
 			</data>
 			<key>hash2</key>
 			<data>
-			rmOKBDEqjNFTCuTL1w6N7mQA+/MbQrXourCUUU+/iTc=
+			2gFdnCc5lR5wmwVkWdl4nFJwoVhF5J97/v5qZ6k5xeo=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			c1n5UbEtnXLFTjj/py2zbPbyAXg=
+			6vi2CnK2OUoPP45NWhnZB+v2NTQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			u/69G/3Tc42MajZEhBVQKQDs6z4UH7nui47EwP9QK8U=
+			hP49aTH44lMeGGY8/+dV20V6/GqZvoxRsjEDdDcR/bw=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -448,22 +456,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kL73HWrW/r1BZm3S4w/+OWJp3QE=
+			14svq5vWENAMHPNb5+7ytujl0A4=
 			</data>
 			<key>hash2</key>
 			<data>
-			JJeTV3jBcOsg1/Qicg6hdeD1AOGgJ/lk5F0doUeik0M=
+			91fP91cZRJh0Noz0sHL8LuG2Wu+NWy/9ym9CdvTRGq8=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m+VScQ5TKu17mpPstRJsRz9Ore4=
+			T+Oj1cGSO+Ov1xGcw6Buelhgh/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			6RWl4XhrXviMXibFJrxmNleHxyxGZams6wEcOxPt1dw=
+			CvSyTzkFNWKeUzXEito50anYU+f7pkePSgb5grS5SRA=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftdoc</key>
@@ -481,22 +489,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kL73HWrW/r1BZm3S4w/+OWJp3QE=
+			14svq5vWENAMHPNb5+7ytujl0A4=
 			</data>
 			<key>hash2</key>
 			<data>
-			JJeTV3jBcOsg1/Qicg6hdeD1AOGgJ/lk5F0doUeik0M=
+			91fP91cZRJh0Noz0sHL8LuG2Wu+NWy/9ym9CdvTRGq8=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m+VScQ5TKu17mpPstRJsRz9Ore4=
+			T+Oj1cGSO+Ov1xGcw6Buelhgh/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			6RWl4XhrXviMXibFJrxmNleHxyxGZams6wEcOxPt1dw=
+			CvSyTzkFNWKeUzXEito50anYU+f7pkePSgb5grS5SRA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -514,11 +522,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fsDaUaysFfBm6bjDeWGfL9DIB8Y=
+			7J1QrcaT90dvd4kdTLtMfkiStzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			wSGy/aiW3uv+ZRncnKmTUCT2RtZ76Jm7LHONZWXHYWQ=
+			IEhP8bzRTF1og9y4mJl03tYg02/bXshrjwYLNaRXACc=
 			</data>
 		</dict>
 		<key>TrinityPlayerStoryboard.storyboardc/Info.plist</key>
@@ -536,11 +544,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1iudEy802t/J5Z+j6fnTt9foOFM=
+			0QBJElCG5OK2bgprX9YeAMymtoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			9VubAIIZO1uW2raWtE5WVIYJ1BdSf7jZPgMZBPUUc54=
+			HctONleiYEHe8FnYOILOIwWTPKupxZD9D3ykKA/pJ7Y=
 			</data>
 		</dict>
 		<key>test-automation/.gitignore</key>
@@ -574,6 +582,17 @@
 			<key>hash2</key>
 			<data>
 			K9UM915LwuBtDKymyp//jwJAmzav8ZmJcTqJWmSPOXo=
+			</data>
+		</dict>
+		<key>test-automation/macRemote.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Hkn6nX9HslL1pWxbMq0blQTr1/Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			1MlEj+zf766PLBjf0XQMXLkQzgmakzyx2MYI/55vMBA=
 			</data>
 		</dict>
 		<key>test-automation/pom.xml</key>
@@ -690,11 +709,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bTrVbXqKnjN7HODauPu5Tbj2W4s=
+			icKYdRYnPGBYSKe+gXfZrfP/Zo0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gPCWi5qBWpHamJOFoXyH3G4ISSLrLHsEvbFZhniWcYw=
+			zx9LmUw/IyO/VVuwhjJzmVVSIPrL231+r0OSkaReqDI=
 			</data>
 		</dict>
 		<key>test-automation/src/main/java/com/thetimmedia/pages/PlayerWebView.java</key>
@@ -712,22 +731,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CeSzT7/eg2PSyQOG2zZsjPfQT2U=
+			BKh6DjdlRnhbRfGDMPUD7lATxco=
 			</data>
 			<key>hash2</key>
 			<data>
-			k3rqCLmStuOeur5SDSsLJOj6csdwbw7IV8pU+3hRFfo=
+			jl39EgOGqhLpwyDbA3kJ4sS8kYEGbHFyGpyY/m0Cs8s=
 			</data>
 		</dict>
 		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerLanguageSelectBlock.java</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dQHNn2l2HUr+eFVtRp1FHftixvs=
+			1y0Hf2mrWxRH9Nsvj3fcJH95UbI=
 			</data>
 			<key>hash2</key>
 			<data>
-			rgkzXMyjCZDrpL119WJRI/dpYeGpMez0sxHllq7IHN8=
+			UnxVhOXl5E+aFVtPLx2K+UUJG5pP69vZAlWHsJftTRk=
 			</data>
 		</dict>
 		<key>test-automation/src/main/java/com/thetimmedia/pages/blocks/PlayerSettingsBlock.java</key>
@@ -833,11 +852,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dv/gBDRNJxhzN2M/wOIDLhhh41g=
+			My8z4FHgOj9e/wLZIBdgrO57Z1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			HYmo44vOntWL4WPvTK3EMy6g+fIH+JhyFV0OUBWCO9A=
+			qwCiL8OTn/90Vlprw3+Hv50AzJXbh2q0+v8iCichyAA=
 			</data>
 		</dict>
 		<key>test-automation/src/main/java/com/thetimmedia/utils/CustomCucumberWithSerenity.java</key>
@@ -921,22 +940,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QU0F43lgVbzjazCCq4GnHNVVARI=
+			ucwBnTWDVWXQls31Hu4Fq5y7Aw8=
 			</data>
 			<key>hash2</key>
 			<data>
-			rTbmk/1Qc80aA3DYuxj2nt3JuRrRKLsTFrsoaZv8TtQ=
+			217/2B6ekN4P7L1kgP3NhGURJck4D+yOe/UiLR6ZMZo=
 			</data>
 		</dict>
 		<key>test-automation/src/test/java/com/thetimmedia/runner/RunnerLocalTest.java</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6/B+H3/uERdoABsH5Zoc4VOOfXQ=
+			AKz5cXqwIua5Nm/2HiQNpvNd14c=
 			</data>
 			<key>hash2</key>
 			<data>
-			g0K8OpL4EIK03ny/RZZNwAEPGBUTlncsJeulK6/jVUg=
+			QZJCucip5jBLlBUxuUhYY7cGqdgPCSzTY9idif+PFLo=
+			</data>
+		</dict>
+		<key>test-automation/src/test/java/com/thetimmedia/runner/RunnerRemoteTest.java</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			shatu/Ad3nBtNxMpSTxBDVUc3+E=
+			</data>
+			<key>hash2</key>
+			<data>
+			CvETz8YYrZSpnXlJDZKk5F8qou9+l0Mqj8EXh03nDDo=
 			</data>
 		</dict>
 		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/CommonStepDefinitions.java</key>
@@ -976,11 +1006,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oQvdZrMSMzH6DtF6V9HbR3B2huU=
+			/b4SsRm4HCjo7JRpKVRZSpYO6fs=
 			</data>
 			<key>hash2</key>
 			<data>
-			05RCyesBKrKsxT0rKbzIesoHFDxhONYGgevdpVDsGg0=
+			EIEyB4g/zdoSYB2I6Js11GSfYuopH4262Hxqm1SHhCc=
 			</data>
 		</dict>
 		<key>test-automation/src/test/java/com/thetimmedia/stepdefinitions/SettingsStepDefinitions.java</key>
@@ -998,11 +1028,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hD1b/ICQUboEY2P1f0ESHLm7XE4=
+			2VKTN4AMIIohTq0t63FeVOb2yjg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ipFCFBPpi0XAYp0CXLmF9pCWyz8pUXB68LOuoMbClbE=
+			8oiaIaHnIGBgg12Zv30oC5DOYyG3+Q98Q5ogAO8J4H4=
 			</data>
 		</dict>
 		<key>test-automation/src/test/resources/features/DemoAppMultiPlayersUsage.feature</key>

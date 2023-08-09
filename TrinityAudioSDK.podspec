@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '10.0'
 s.name = 'TrinityAudioSDK'
-s.version = '0.3.73'
+s.version = '0.3.75'
 s.summary = 'Trinity Audio SDKs'
 s.description  = 'Using the Trinity Audio service you can turn your readers into listeners by turning text into lifelike speech. Make your content accessible via audio with a quick and seamless integration. Choose from dozens of voices across a variety of languages.'
 s.requires_arc = true

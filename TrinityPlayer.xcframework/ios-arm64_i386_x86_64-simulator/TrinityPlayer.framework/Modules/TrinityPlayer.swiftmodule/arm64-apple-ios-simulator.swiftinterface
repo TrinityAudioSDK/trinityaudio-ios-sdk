@@ -35,6 +35,10 @@ public enum TrinityParams : Swift.String {
   case SDKVersion
   case trinityVersion
   case isDebug
+  case appStoreURL
+  case GDPR
+  case GDPRConsent
+  case USPrivacy
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get

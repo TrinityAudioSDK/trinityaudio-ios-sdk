@@ -29,22 +29,22 @@ public class PlayerLanguageSelectBlock extends BasePage {
     @FindBy(xpath = ".//div[@class='cancel']")
     public Button cancelWebButton;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@value='ENGLISH']/parent::*")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='ENGLISH']")
     private Button englishNativeButton;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@value='DEUTSCH']/parent::*")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='DEUTSCH']")
     private Button germanNativeButton;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@value='FRANÇAIS']/parent::*")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='FRANÇAIS']")
     private Button frenchNativeButton;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@value='ESPAÑOL']/parent::*")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='ESPAÑOL']")
     private Button spanishNativeButton;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@value='汉语']/parent::*")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='中文']")
     private Button chineseNativeButton;
 
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@value='ITALIANO']/parent::*")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name='ITALIANO']")
     private Button italianNativeButton;
 
     public Button getWebButtonByLanguage(String language) {
