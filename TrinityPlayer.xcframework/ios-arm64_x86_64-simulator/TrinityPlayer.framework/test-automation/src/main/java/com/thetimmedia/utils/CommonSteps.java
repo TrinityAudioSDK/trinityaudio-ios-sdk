@@ -138,7 +138,8 @@ public class CommonSteps {
                 Driver.getDriver().switchTo().defaultContent();
             }
         }
-        if (!selfName.contains("frame")) {
+//        if (!selfName.equals("Trinity Player")) { // document.title
+        if (!selfName.equals("frame")) {
             for (int i = 0; i < Integer.parseInt(ProjectPropertiesUtils.getInstance().getDefaultTimeout()); i++) {
                 try {
                     for (int j = 0; j < 5 && selfName.isEmpty(); j++) {

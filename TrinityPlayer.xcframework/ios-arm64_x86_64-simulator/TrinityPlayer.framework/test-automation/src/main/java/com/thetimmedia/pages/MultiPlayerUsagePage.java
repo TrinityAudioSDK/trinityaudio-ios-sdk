@@ -8,6 +8,6 @@ import java.util.List;
 
 public class MultiPlayerUsagePage extends BasePage {
 
-    @FindBy (xpath = ".//XCUIElementTypeOther[contains(@name,'audioFrame_')]")
+    @FindBy (xpath = "//XCUIElementTypeOther[@name='Trinity Audio Player']//XCUIElementTypeButton[@name='Play']")
     public List<Section> listOfPlayerInstances;
 }

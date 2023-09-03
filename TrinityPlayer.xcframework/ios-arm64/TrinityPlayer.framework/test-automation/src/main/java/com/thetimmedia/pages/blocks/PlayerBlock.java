@@ -12,19 +12,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class PlayerBlock extends BasePage {
 
-    @FindBy(xpath = ".//XCUIElementTypeScrollView//XCUIElementTypeOther[contains(@name,'audioFrame_')]")
+    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Trinity Audio Player'])[2]")
     public Label playerFrame;
 
-    @FindBy(xpath = ".//XCUIElementTypeOther[contains(@name,'audioFrame_')]/XCUIElementTypeOther[1]")
+    @FindBy(xpath = "(//XCUIElementTypeOther[@name='Trinity Audio Player'])[2]/XCUIElementTypeButton[1]")
     public Button playStopNativeButton;
 
-    @FindBy(xpath = ".//XCUIElementTypeScrollView/following-sibling::XCUIElementTypeOther[.//XCUIElementTypeOther[contains(@name,'audioFrame_')]/XCUIElementTypeOther[1]]")
+    @FindBy(xpath = ".//XCUIElementTypeScrollView/following-sibling::XCUIElementTypeOther[//XCUIElementTypeButton[@name='Play']]")
     public Button playStopFABNativeButton;
 
-    @FindBy(xpath = ".//div[@class='button button-play']")
+    @FindBy(xpath = ".//button[@class='button button-play']")
     public Button playWebButton;
 
-    @FindBy(xpath = ".//div[@class='button button-pause']")
+    @FindBy(xpath = ".//button[@class='button button-pause']")
     public Button pauseWebButton;
 
     @FindBy(xpath = ".//div[@class='title']/span")
@@ -36,17 +36,19 @@ public class PlayerBlock extends BasePage {
     @FindBy(xpath = ".//div[@class='powered-by']/span")
     public Label poweredByWebLabel;
 
+    @FindBy(xpath = ".//div[@class='translation-language']")
+    public Label translationLanguage;
+
     @FindBy(xpath = ".//div[@class='powered-by']/a")
     public Label poweredByWhomWebLabel;
 
-    @FindBy(xpath = ".//div[contains(@class,'settings-button')]")
+    @FindBy(xpath = ".//button[contains(@class,'settings-button')]")
     public Button languageSettingsWebButton;
 
-    @FindBy(xpath = ".//XCUIElementTypeOther[contains(@name,'audioFrame_')]/XCUIElementTypeOther[.//following-sibling::XCUIElementTypeOther[1]/XCUIElementTypeStaticText[@value='Powered by']]|"
-            + ".//XCUIElementTypeOther[contains(@name,'audioFrame_')]/XCUIElementTypeOther[6]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name='Settings']")
     public Button languageSettingsNativeButton;
 
-    @FindBy(xpath = ".//div[@class='button button-loading']")
+    @FindBy(xpath = ".//button[@class='button button-loading']")
     public Button loadingWebButton;
 
     @FindBy(xpath = ".//div[contains(@class, 'cmp-el-progress-bar')]")

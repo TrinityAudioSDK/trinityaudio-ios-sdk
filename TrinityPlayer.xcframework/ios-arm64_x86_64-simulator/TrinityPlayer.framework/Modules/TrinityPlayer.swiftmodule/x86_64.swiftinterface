@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrinityPlayer
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrinityPlayer
 import AdSupport
+import AppTrackingTransparency
 import Foundation
 import Swift
 @_exported import TrinityPlayer
@@ -12,6 +13,9 @@ import WebKit
   weak public var delegate: TrinityPlayer.TrinityAudioDelegate?
   public func invalidate()
   public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+  public func evaluate(javaScript: Swift.String)
+  public func pause(playerID maybePlayerID: Swift.String?)
+  public func pauseAll()
   @objc deinit
 }
 public enum TrinityState {
@@ -32,6 +36,10 @@ public enum TrinityParams : Swift.String {
   case SDKVersion
   case trinityVersion
   case isDebug
+  case appStoreURL
+  case GDPR
+  case GDPRConsent
+  case USPrivacy
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -49,10 +57,14 @@ public protocol TrinityAudioDelegate : AnyObject {
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, receiveError: TrinityPlayer.TrinityError)
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, detectUpdateForContentHeight height: Swift.Float, inState state: TrinityPlayer.TrinityState)
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, didCheckCookie cookieData: [Swift.String : Any])
+  func trinity(service: TrinityPlayer.TrinityAudioProtocol, didReceivePostMessage: [Swift.String : Any])
 }
 public protocol TrinityAudioProtocol {
   var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
   func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+  func evaluate(javaScript: Swift.String)
+  func pause(playerID: Swift.String?)
+  func pauseAll()
   func invalidate()
 }
 extension TrinityPlayer.TrinityState : Swift.Equatable {}

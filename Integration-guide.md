@@ -5,7 +5,7 @@ This document describes how to integrate the Trinity Audio Player into
 an iOS app as well as how to configure and control it.
 
 -   Updated: Sep  14, 2021
--   Document version: 0.1
+-   Document version: 0.2
 
 ### Integration
 
@@ -31,7 +31,7 @@ You can choose between:
     packages` view
 
 That’s it! You can now Import the library and use the SDK according
-to[ these steps](#id.811shq5pgetr)
+to[ these steps](#usage-and-main-objects)
 
 * * * * *
 
@@ -44,7 +44,7 @@ For installing via CocoaPods dependency manager add
 ``` 
 target 'MyApp' do
 
-  pod 'TrinityAudioSDK', '~> 0.1'
+  pod 'TrinityAudioSDK', '~> 1.0'
 
 end
 ```

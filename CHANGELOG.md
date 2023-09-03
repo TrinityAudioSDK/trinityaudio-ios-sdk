@@ -1,6 +1,12 @@
 # Change Log
 This document contains release notes for the TrinityAudio iOS SDK
 
+## 1.0.X
+Released on Sep 4th, 2023
+- Min supported iOS 14.x
+- IDFA consent 
+- SDK version reporting fix
+
 ## 0.3.X
 Released on May 8th, 2022
 - Renaming `TrinityAudioSDK` to `TrinityPlayer` for iOS 13.3 (SPM) support

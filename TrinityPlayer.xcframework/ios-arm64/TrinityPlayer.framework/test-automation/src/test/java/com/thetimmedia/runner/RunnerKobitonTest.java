@@ -18,11 +18,11 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-@RunWith(CustomCucumberWithSerenity.class)
-@CucumberOptions(glue = { "com.thetimmedia.stepdefinitions" },
-                 features = { "src/test/resources/features" },
-                 plugin = { "io.qameta.allure.cucumber2jvm.AllureCucumber2Jvm" },
-                 tags = { "@MainSDKUsage" })
+//@RunWith(CustomCucumberWithSerenity.class)
+//@CucumberOptions(glue = { "com.thetimmedia.stepdefinitions" },
+//                 features = { "src/test/resources/features" },
+//                 plugin = { "io.qameta.allure.cucumber2jvm.AllureCucumber2Jvm" },
+//                 tags = { "@MainSDKUsage" })
 public class RunnerKobitonTest {
 
     @BeforeClass
@@ -49,6 +49,10 @@ public class RunnerKobitonTest {
         capabilities.setCapability("platformName", "iOS");
         capabilities.setCapability("app", "kobiton-store:v" + KobitonAPIs.getLatestAppVersionId());
         capabilities.setCapability("webviewConnectTimeout", "3000");
+
+        // setting this to avoid iOS notifications on account verification as per Kobiton suuport
+        capabilities.setCapability("autoAcceptAlerts", true);
+        capabilities.setCapability("autoDismissAlerts", true);
 
         // Initialise the remote Webdriver using Kobiton remote URL
         // and desired capabilities defined above

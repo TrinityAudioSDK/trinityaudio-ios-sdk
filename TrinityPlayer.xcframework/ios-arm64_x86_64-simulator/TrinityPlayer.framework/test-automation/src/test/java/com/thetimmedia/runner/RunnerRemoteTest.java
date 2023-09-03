@@ -17,23 +17,23 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-//Uncomment following for local test
-//@RunWith(CustomCucumberWithSerenity.class)
-//@CucumberOptions(glue = { "com.thetimmedia.stepdefinitions" },
-//                features = { "src/test/resources/features" },
-//                plugin = { "io.qameta.allure.cucumber2jvm.AllureCucumber2Jvm" },
-//                tags = { "@MainSDKUsage" })
-public class RunnerLocalTest {
+//Uncomment following for remote mac test
+@RunWith(CustomCucumberWithSerenity.class)
+@CucumberOptions(glue = { "com.thetimmedia.stepdefinitions" },
+                features = { "src/test/resources/features" },
+                plugin = { "io.qameta.allure.cucumber2jvm.AllureCucumber2Jvm" },
+                tags = { "@MainSDKUsage" })
+public class RunnerRemoteTest {
 
     @BeforeClass
     public static void beforeClass() throws MalformedURLException {
         String serverURL = "http://127.0.0.1:4723/";  // put IP address to Appium server
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
-        capabilities.setCapability("deviceName", "iPhone 14");
-        capabilities.setCapability("platformVersion", "16.2");
+        capabilities.setCapability("deviceName", "iPhone 12");
+        capabilities.setCapability("platformVersion", "14.4");
         capabilities.setCapability("platformName", "iOS");
-        capabilities.setCapability("app", "/Users/alex/Library/Developer/Xcode/DerivedData/TrinityPlayer-bqltdpwknwqwnvdynjovdejzgvqw/Build/Products/Debug-iphonesimulator/TrinityPlayerDemoApp.app"); // App path on PC where Appium started
+        capabilities.setCapability("app", "/Users/administrator/build/workspace/trinity-sdk-ios-pr/iOS/build/Debug-iphonesimulator/TrinityPlayerDemoApp.app");
 
         capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
         capabilities.setCapability("useNewWDA", false);

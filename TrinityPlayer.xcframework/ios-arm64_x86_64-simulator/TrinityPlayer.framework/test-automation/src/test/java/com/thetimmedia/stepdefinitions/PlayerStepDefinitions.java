@@ -84,6 +84,10 @@ public class PlayerStepDefinitions {
             Assertions.expectedStringsAreEqual(playerBlock.poweredByWebLabel.getName(), powerBy + " " + powerByWhom,
                     text);
             break;
+        case "Translation":
+            String translationLanguageText = playerBlock.translationLanguage.getText();
+            Assertions.expectedStringsAreEqual(playerBlock.poweredByWebLabel.getName(), translationLanguageText, text);
+            break;
         case "Timer":
             Assertions.elementContainsText(playerBlock.timerWebLabel, text);
             break;
