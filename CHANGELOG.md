@@ -6,6 +6,8 @@ Released on Sep 4th, 2023
 - Min supported iOS 14.x
 - IDFA consent 
 - SDK version reporting fix
+- GDPR/USPrivacy support
+- Darkmode support 
 
 ## 0.3.X
 Released on May 8th, 2022

@@ -4,8 +4,8 @@
 This document describes how to integrate the Trinity Audio Player into
 an iOS app as well as how to configure and control it.
 
--   Updated: Sep  14, 2021
--   Document version: 0.2
+-   Updated: Sep  12, 2023
+-   Document version: 1.0
 
 ### Integration
 
@@ -93,26 +93,58 @@ To render the player, call the `render` method of the TrinityAudio class.   �
                         settings: [String : String]?)                     
 ```
 
-parameter | description
---------- | ------
-parentViewController                 | View controller in which the player will be rendered 
-unitId                               | Your player unit identifier - will be provided by TrinityAudio team  
-sourceView                           | Content view in which the player will be displayed 
-fabViewTopLeftCoordinates            | Top left corner of the FAB (Floating Action Button) unit. Optional value. Pass nil - to disable FAB functionality.           
-contentURL                           | URL which contains the content.            
-settings                             | Dictionary with optional* player settings 
+| parameter                 | description                                                                                                        |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------|
+| parentViewController      | View controller in which the player will be rendered                                                               | 
+| unitId                    | Your player unit identifier - will be provided by TrinityAudio team                                                | 
+| sourceView                | Content view in which the player will be displayed                                                                 | 
+| fabViewTopLeftCoordinates | Top left corner of the FAB (Floating Action Button) unit. Optional value. Pass nil - to disable FAB functionality. |            
+| contentURL                | URL which contains the content.                                                                                    |           
+| settings                  | Dictionary with optional* player settings                                                                          | 
 
 Common Player Settings:
 
- name | description
---------- | ------
-language                             | Language of the content provided. Use this incase it differs from the language configured 
-voiceId                              | Overrides the unit level configuration for voice ID           
+| name     | description                                                                               |
+|----------|-------------------------------------------------------------------------------------------|
+| language | Language of the content provided. Use this incase it differs from the language configured | 
+| voiceId  | Overrides the player level configuration for voice ID                                       |      
 
 For the full list of available params look in our player setting doc
 [Here](https://trinity-audio-player.s3.amazonaws.com/TTS.pdf) under
 `Script Tag Parameters` section.
 
+* Dark mode support - the SDK will attempt to identify whether the containing app is running in dark-mode, in which case it will change the player theme to a dark-mode theme if applicable
+
+#### GDPR & US privacy support
+GDPR & US privacy consent string can be directly passed to the player as part of the `settings` object.  
+These values are not mandatory, and in the case of their absence Trinity will look for these values in the IAB standard location as detailed [here](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Mobile%20In-App%20Consent%20APIs%20v1.0%20Final.md#cmp-internal-structure-defined-api-)
+
+
+The supported params are:
+
+| name                               | description                            |
+|------------------------------------|----------------------------------------|
+| TrinityParams.USPrivacy.rawValue   | US Privacy consent string, e.g. 1-Y-   |
+| TrinityParams.GDPR.rawValue        | GDPR version 1. 1 for accepted, 0 - no |
+| TrinityParams.GDPRConsent.rawValue | GDPR version 2 consent string          |
+
+For example: 
+```swift
+  let settings : [String: String] = [
+        TrinityParams.USPrivacy.rawValue : "1-Y-",
+        TrinityParams.GDPR.rawValue : "0",
+        TrinityParams.GDPRConsent.rawValue : "CPSzMzJPTeGtxADABCENB_CoAP_AAEJAAAAADGwBAAGABPADCAY0BjYAgADAAngBhAMaAAA.YAAABBBBB"
+    ]
+    player.render(parentViewController, unitId, sourceView, fabViewTopLeftCoordinates, contentURL, settings)
+```
+
+Note: If you would like to utilize IDFA for ad tracking (for monetized player only) - add a request for IDFA consent into `Info.plist`.   
+for example :
+
+```plist
+    <key>NSUserTrackingUsageDescription</key>
+	<string>This identifier will be used to deliver personalized ads to you.</string>
+```
 
 #### Player API
 
