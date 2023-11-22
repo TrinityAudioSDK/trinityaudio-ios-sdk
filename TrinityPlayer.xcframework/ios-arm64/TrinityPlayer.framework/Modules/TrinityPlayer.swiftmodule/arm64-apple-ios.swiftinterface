@@ -3,13 +3,23 @@
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrinityPlayer
 import AdSupport
 import AppTrackingTransparency
+import Combine
+import CoreGraphics
 import Foundation
 import Swift
+import SwiftUI
 @_exported import TrinityPlayer
 import UIKit
 import WebKit
-@_hasMissingDesignatedInitializers public class TrinityAudio : TrinityPlayer.TrinityAudioProtocol {
-  public static func newInstance() -> TrinityPlayer.TrinityAudioProtocol
+public struct TrinityAudioPlayer : SwiftUI.View {
+  public init(audioController: TrinityPlayer.TrinityAudioController)
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13TrinityPlayer0a5AudioB0V4bodyQrvp", 0) 🦸
+}
+@_hasMissingDesignatedInitializers public class TrinityAudio : TrinityPlayer.UIKitTrinityAudioProtocol {
+  public static func newInstance() -> TrinityPlayer.UIKitTrinityAudioProtocol
   weak public var delegate: TrinityPlayer.TrinityAudioDelegate?
   public func invalidate()
   public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
@@ -17,6 +27,16 @@ import WebKit
   public func pause(playerID maybePlayerID: Swift.String?)
   public func pauseAll()
   @objc deinit
+}
+public class TrinityAudioController : Foundation.ObservableObject, TrinityPlayer.TrinityAudioProtocol {
+  public var delegate: TrinityPlayer.TrinityAudioDelegate?
+  public init(unitId: Swift.String, contentURL: Swift.String, settings: [Swift.String : Swift.String]? = nil, delegate: TrinityPlayer.TrinityAudioDelegate? = nil)
+  public func evaluate(javaScript: Swift.String)
+  public func pause(playerID: Swift.String?)
+  public func pauseAll()
+  public func invalidate()
+  @objc deinit
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
 public enum TrinityState {
   case main
@@ -61,11 +81,19 @@ public protocol TrinityAudioDelegate : AnyObject {
 }
 public protocol TrinityAudioProtocol {
   var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
-  func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
   func evaluate(javaScript: Swift.String)
   func pause(playerID: Swift.String?)
   func pauseAll()
   func invalidate()
+}
+public protocol UIKitTrinityAudioProtocol : TrinityPlayer.TrinityAudioProtocol {
+  func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+}
+extension View {
+  public func trinityFAB(controller: TrinityPlayer.TrinityAudioController, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?) -> some SwiftUI.View
+  
+  public func trinityObserveScrollViewContentSize(controller: TrinityPlayer.TrinityAudioController) -> some SwiftUI.View
+  
 }
 extension TrinityPlayer.TrinityState : Swift.Equatable {}
 extension TrinityPlayer.TrinityState : Swift.Hashable {}

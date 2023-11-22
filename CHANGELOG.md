@@ -1,6 +1,10 @@
 # Change Log
 This document contains release notes for the TrinityAudio iOS SDK
 
+## 2.0.X
+Released on Nov 23rd, 2023
+- Support for SwiftUI
+
 ## 1.0.X
 Released on Sep 4th, 2023
 - Min supported iOS 14.x

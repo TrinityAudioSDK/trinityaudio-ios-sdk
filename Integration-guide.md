@@ -116,7 +116,7 @@ For the full list of available params look in our player setting doc
 * Dark mode support - the SDK will attempt to identify whether the containing app is running in dark-mode, in which case it will change the player theme to a dark-mode theme if applicable
 
 #### GDPR & US privacy support
-GDPR & US privacy consent string can be directly passed to the player as part of the `settings` object.  
+GDPR & US privacy consent string can be directly passed to the player as part of the `settings` dictionary.  
 These values are not mandatory, and in the case of their absence Trinity will look for these values in the IAB standard location as detailed [here](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Mobile%20In-App%20Consent%20APIs%20v1.0%20Final.md#cmp-internal-structure-defined-api-)
 
 
@@ -145,6 +145,7 @@ for example :
     <key>NSUserTrackingUsageDescription</key>
 	<string>This identifier will be used to deliver personalized ads to you.</string>
 ```
+For requesting user authorization to access app-related data for tracking see the detailed [here](https://developer.apple.com/documentation/apptrackingtransparency)
 
 #### Player API
 
