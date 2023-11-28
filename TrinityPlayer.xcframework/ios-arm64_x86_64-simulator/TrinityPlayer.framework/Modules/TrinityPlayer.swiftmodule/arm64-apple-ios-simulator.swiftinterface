@@ -18,8 +18,8 @@ public struct TrinityAudioPlayer : SwiftUI.View {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s13TrinityPlayer0a5AudioB0V4bodyQrvp", 0) 🦸
 }
-@_hasMissingDesignatedInitializers public class TrinityAudio : TrinityPlayer.UIKitTrinityAudioProtocol {
-  public static func newInstance() -> TrinityPlayer.UIKitTrinityAudioProtocol
+@_hasMissingDesignatedInitializers public class TrinityAudio : TrinityPlayer.TrinityAudioProtocol {
+  public static func newInstance() -> TrinityPlayer.TrinityAudioProtocol
   weak public var delegate: TrinityPlayer.TrinityAudioDelegate?
   public func invalidate()
   public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
@@ -85,9 +85,10 @@ public protocol TrinityAudioProtocol {
   func pause(playerID: Swift.String?)
   func pauseAll()
   func invalidate()
-}
-public protocol UIKitTrinityAudioProtocol : TrinityPlayer.TrinityAudioProtocol {
   func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+}
+extension TrinityAudioProtocol {
+  public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
 }
 extension View {
   public func trinityFAB(controller: TrinityPlayer.TrinityAudioController, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?) -> some SwiftUI.View
