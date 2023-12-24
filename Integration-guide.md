@@ -4,8 +4,8 @@
 This document describes how to integrate the Trinity Audio Player into
 an iOS app as well as how to configure and control it.
 
--   Updated: Sep  12, 2023
--   Document version: 1.0
+-   Updated: Nov 28, 2023
+-   Document version: 2.0
 
 ### Integration
 
@@ -58,6 +58,12 @@ trinity audio SDK will be available at your project.
 
 ## Usage and main objects
 
+The SDK supports both UIKit & SwiftUI frameworks. See the following demo apps for a reference on SDK integration
+
+- [UIKit demo app](https://github.com/TrinityAudioSDK/trinityaudio-ios-demo) 
+- [SwiftUI demo app](https://github.com/TrinityAudioSDK/trinityaudio-ios-swiftui-demo) 
+
+### UIKit
 
 #### SDK initialization
 
@@ -94,20 +100,20 @@ To render the player, call the `render` method of the TrinityAudio class.   �
 ```
 
 | parameter                 | description                                                                                                        |
-|---------------------------|--------------------------------------------------------------------------------------------------------------------|
-| parentViewController      | View controller in which the player will be rendered                                                               | 
-| unitId                    | Your player unit identifier - will be provided by TrinityAudio team                                                | 
-| sourceView                | Content view in which the player will be displayed                                                                 | 
-| fabViewTopLeftCoordinates | Top left corner of the FAB (Floating Action Button) unit. Optional value. Pass nil - to disable FAB functionality. |            
-| contentURL                | URL which contains the content.                                                                                    |           
-| settings                  | Dictionary with optional* player settings                                                                          | 
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| parentViewController      | View controller in which the player will be rendered                                                               |
+| unitId                    | Your player unit identifier - will be provided by TrinityAudio team                                                |
+| sourceView                | Content view in which the player will be displayed                                                                 |
+| fabViewTopLeftCoordinates | Top left corner of the FAB (Floating Action Button) unit. Optional value. Pass nil - to disable FAB functionality. |
+| contentURL                | URL which contains the content.                                                                                    |
+| settings                  | Dictionary with optional* player settings                                                                          |
 
 Common Player Settings:
 
 | name     | description                                                                               |
-|----------|-------------------------------------------------------------------------------------------|
-| language | Language of the content provided. Use this incase it differs from the language configured | 
-| voiceId  | Overrides the player level configuration for voice ID                                       |      
+| -------- | ----------------------------------------------------------------------------------------- |
+| language | Language of the content provided. Use this incase it differs from the language configured |
+| voiceId  | Overrides the player level configuration for voice ID                                     |
 
 For the full list of available params look in our player setting doc
 [Here](https://trinity-audio-player.s3.amazonaws.com/TTS.pdf) under
@@ -115,7 +121,94 @@ For the full list of available params look in our player setting doc
 
 * Dark mode support - the SDK will attempt to identify whether the containing app is running in dark-mode, in which case it will change the player theme to a dark-mode theme if applicable
 
-#### GDPR & US privacy support
+### SwiftUI
+
+#### SDK initialization
+
+* * * * *
+
+Import the library
+
+`Import TrinityPlayer`
+
+To start using the SDK - first initialize the audio controller `TrinityAudioController`
+Object.
+Create a new instance with the `init` method to initialize the library. The result is an object that implements the `TrinityAudioProtocol`
+
+```swift
+public class TrinityAudioController : TrinityAudioProtocol {
+    public init(unitId: String, 
+                contentURL: String, 
+                settings: [String : String]? = nil, 
+                delegate: TrinityPlayer.TrinityAudioDelegate? = nil)
+}
+```
+
+| parameter  | description                                                         |
+| ---------- | ------------------------------------------------------------------- |
+| unitId     | Your player unit identifier - will be provided by TrinityAudio team |
+| contentURL | URL which contains the content.                                     |
+| settings   | Dictionary with optional* player settings                           |
+| delegate   | TrinityAudioDelegate                                                |
+
+```swift
+// example
+var trinityAudioController = TrinityAudioController(unitId: [YOUR_UNIT_ID], contentURL:[URL_TO_READ_TEXT_FROM])
+```
+
+* * * * *
+
+#### Rendering the TTS player
+
+* * * * *
+
+To render the player, create an `TrinityAudioPlayer` view and insert to layout hierarchy
+```swift
+public struct TrinityAudioPlayer : View {
+    public init(audioController: TrinityPlayer.TrinityAudioController)
+}
+```
+
+| parameter       | description            |
+| --------------- | ---------------------- |
+| audioController | TrinityAudioController |
+
+
+* Dark mode support - the SDK will attempt to identify whether the containing app is running in dark-mode, in which case it will change the player theme to a dark-mode theme if applicable
+
+#### Floating button with SwiftUI
+
+* * * * *
+To support FAB (Floating Action Button) when placing the player in a scroll view - please follow these requirements
+1. Observe the view using the `TrinityAudioController` created in the initial `init` method by calling `trinityObserveScrollViewContentSize` 
+
+```swift
+public func trinityObserveScrollViewContentSize(controller: TrinityPlayer.TrinityAudioController) -> some View
+```
+
+| parameter       | description            |
+| --------------- | ---------------------- |
+| audioController | TrinityAudioController |
+
+2. Create the FAB element within the view you'd like to by calling the `trinityFAB` method. Use  `fabViewTopLeftCoordinates` to position the FAB within the view
+```swift
+public func trinityFAB(controller: TrinityPlayer.TrinityAudioController, fabViewTopLeftCoordinates: CGPoint?) -> some View
+```
+
+| parameter                 | description                                                                                                        |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| controller                | TrinityAudioController                                                                                             |
+| fabViewTopLeftCoordinates | Top left corner of the FAB (Floating Action Button) unit. Optional value. Pass nil - to disable FAB functionality. |
+
+```
+// example
+rootView.trinityFAB(
+    controller: trinityAudioController,
+    fabViewTopLeftCoordinates: CGPoint(x: 20, y: 80)
+)
+```
+
+### GDPR & US privacy support
 GDPR & US privacy consent string can be directly passed to the player as part of the `settings` dictionary.  
 These values are not mandatory, and in the case of their absence Trinity will look for these values in the IAB standard location as detailed [here](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Mobile%20In-App%20Consent%20APIs%20v1.0%20Final.md#cmp-internal-structure-defined-api-)
 
@@ -123,7 +216,7 @@ These values are not mandatory, and in the case of their absence Trinity will lo
 The supported params are:
 
 | name                               | description                            |
-|------------------------------------|----------------------------------------|
+| ---------------------------------- | -------------------------------------- |
 | TrinityParams.USPrivacy.rawValue   | US Privacy consent string, e.g. 1-Y-   |
 | TrinityParams.GDPR.rawValue        | GDPR version 1. 1 for accepted, 0 - no |
 | TrinityParams.GDPRConsent.rawValue | GDPR version 2 consent string          |
@@ -147,7 +240,7 @@ for example :
 ```
 For requesting user authorization to access app-related data for tracking see the detailed [here](https://developer.apple.com/documentation/apptrackingtransparency)
 
-#### Player API
+### Player API
 
 To pause the player's audio use the `pause()` method of `TrinityAudioProtocol`. 
 For example : 
