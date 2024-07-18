@@ -249,7 +249,22 @@ For example :
     myPlayer.pause()
 ```
 *this method accepts playerID which is only required in multiple player setups.
+*The `playerId` can be obtained from the `playerId` property of `TrinityAudioProtocol`. However, it is only available after the `trinity(service: TrinityAudioProtocol, onPlayerReady playerId: String)` method of `TrinityAudioDelegate` is called.
 
+To pause all players, use the `pauseAll()` method of `TrinityAudioProtocol`.
+For example : 
+```swift
+    myPlayer.pauseAll()
+```
+
+To resume playback, use the `play()` method of `TrinityAudioProtocol`.
+For example : 
+
+```swift
+    myPlayer.play()
+```
+
+The TTS player supports autoplay if the `autoPlay` property of `TrinityAudioProtocol` is set to `true`. When enabled, the player will autoplay when it is ready to play.
 
 The trinity player offers multiple other APIs and to interact with it. 
 This can be done by invoking the JS player API methods. 
@@ -277,6 +292,13 @@ The delegate can be used to subscribe to events emitted by the player. This can 
 TrinityAudioDelegate methods.
 
 * * * * *
+
+- To receive a callback when the player is ready to play, implement this optional method
+
+```swift
+func trinity(service: TrinityAudio.TrinityAudioProtocol, 
+             onPlayerReady playerId: String)
+```
 
 - For monitoring errors use:
 

@@ -21,19 +21,34 @@ public struct TrinityAudioPlayer : SwiftUI.View {
 @_hasMissingDesignatedInitializers public class TrinityAudio : TrinityPlayer.TrinityAudioProtocol {
   public static func newInstance() -> TrinityPlayer.TrinityAudioProtocol
   weak public var delegate: TrinityPlayer.TrinityAudioDelegate?
+  public var playerId: Swift.String?
+  public var autoPlay: Swift.Bool
+  @objc deinit
   public func invalidate()
   public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
   public func evaluate(javaScript: Swift.String)
   public func pause(playerID maybePlayerID: Swift.String?)
   public func pauseAll()
-  @objc deinit
+  public func play()
 }
 public class TrinityAudioController : Foundation.ObservableObject, TrinityPlayer.TrinityAudioProtocol {
   public var delegate: TrinityPlayer.TrinityAudioDelegate?
+  public var autoPlay: Swift.Bool
+  @Foundation.Published @_projectedValueProperty($playerId) public var playerId: Swift.String? {
+    get
+    set
+    _modify
+  }
+  public var $playerId: Combine.Published<Swift.String?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, OSX 11.0, *)
+    set
+  }
   public init(unitId: Swift.String, contentURL: Swift.String, settings: [Swift.String : Swift.String]? = nil, delegate: TrinityPlayer.TrinityAudioDelegate? = nil)
   public func evaluate(javaScript: Swift.String)
   public func pause(playerID: Swift.String?)
   public func pauseAll()
+  public func play()
   public func invalidate()
   @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
@@ -78,12 +93,16 @@ public protocol TrinityAudioDelegate : AnyObject {
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, detectUpdateForContentHeight height: Swift.Float, inState state: TrinityPlayer.TrinityState)
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, didCheckCookie cookieData: [Swift.String : Any])
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, didReceivePostMessage: [Swift.String : Any])
+  func trinity(service: TrinityPlayer.TrinityAudioProtocol, onPlayerReady playerId: Swift.String)
 }
 public protocol TrinityAudioProtocol {
   var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
-  func evaluate(javaScript: Swift.String)
+  var playerId: Swift.String? { get }
+  var autoPlay: Swift.Bool { get set }
+  func play()
   func pause(playerID: Swift.String?)
   func pauseAll()
+  func evaluate(javaScript: Swift.String)
   func invalidate()
   func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
 }
