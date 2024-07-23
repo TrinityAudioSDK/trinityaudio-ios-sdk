@@ -44,7 +44,7 @@ public class TrinityAudioController : Foundation.ObservableObject, TrinityPlayer
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, OSX 11.0, *)
     set
   }
-  public init(unitId: Swift.String, contentURL: Swift.String, settings: [Swift.String : Swift.String]? = nil, delegate: TrinityPlayer.TrinityAudioDelegate? = nil)
+  public init(unitId: Swift.String, contentURL: Swift.String, settings: [Swift.String : Swift.String]? = nil, delegate: TrinityPlayer.TrinityAudioDelegate? = nil, autoPlay: Swift.Bool = false)
   public func evaluate(javaScript: Swift.String)
   public func pause(playerID: Swift.String?)
   public func pauseAll()
@@ -94,6 +94,9 @@ public protocol TrinityAudioDelegate : AnyObject {
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, didCheckCookie cookieData: [Swift.String : Any])
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, didReceivePostMessage: [Swift.String : Any])
   func trinity(service: TrinityPlayer.TrinityAudioProtocol, onPlayerReady playerId: Swift.String)
+}
+extension TrinityAudioDelegate {
+  public func trinity(service: TrinityPlayer.TrinityAudioProtocol, onPlayerReady playerId: Swift.String)
 }
 public protocol TrinityAudioProtocol {
   var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
