@@ -145,9 +145,10 @@ public class TrinityAudioController : TrinityAudioProtocol {
 ```
 
 | parameter  | description                                                         |
-| ---------- | ------------------------------------------------------------------- |
+|------------|---------------------------------------------------------------------|
 | unitId     | Your player unit identifier - will be provided by TrinityAudio team |
 | contentURL | URL which contains the content.                                     |
+| autoPlay   | Boolean - automatically start playing the audio once ready          |
 | settings   | Dictionary with optional* player settings                           |
 | delegate   | TrinityAudioDelegate                                                |
 
@@ -208,6 +209,17 @@ rootView.trinityFAB(
 )
 ```
 
+#### Autoplay
+
+The player supports autoplay if the `autoPlay` property of `TrinityAudioProtocol` is set to `true`. The autoplay property *must* be set before calling the `render()` method for autoplay to work.
+When enabled, the player will play the audio once ready, without waiting for user interaction. 
+
+```
+// example
+trinityAudioController.autoPlay = true;
+```
+
+
 ### GDPR & US privacy support
 GDPR & US privacy consent string can be directly passed to the player as part of the `settings` dictionary.  
 These values are not mandatory, and in the case of their absence Trinity will look for these values in the IAB standard location as detailed [here](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Mobile%20In-App%20Consent%20APIs%20v1.0%20Final.md#cmp-internal-structure-defined-api-)
@@ -265,8 +277,6 @@ For example :
     myPlayer.play()
 ```
 
-The TTS player supports autoplay if the `autoPlay` property of `TrinityAudioProtocol` is set to `true`. The autoplay properties must be set before calling the `render()` method for autoplay to work.
-When enabled, the player will autoplay when it is ready to play.
 
 The trinity player offers multiple other APIs and to interact with it. 
 This can be done by invoking the JS player API methods. 
