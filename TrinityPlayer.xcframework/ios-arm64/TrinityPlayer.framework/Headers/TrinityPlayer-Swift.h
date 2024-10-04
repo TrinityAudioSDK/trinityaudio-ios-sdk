@@ -214,6 +214,7 @@ SWIFT_CLASS("_TtC13TrinityPlayer17TrinityPlayerView")
 @interface TrinityPlayerView : UIView <WKUIDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
 @end
 
 @class WKWebView;

@@ -35,6 +35,7 @@ public protocol TrinityAudioPulseDelegate : AnyObject {
   func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, receiveError: TrinityPlayer.TrinityError)
   func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, didReceivePostMessage: [Swift.String : Any])
   func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, onPlayerReady playerId: Swift.String)
+  func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, onBrowseMode toggled: Swift.Bool)
 }
 public class TrinityAudioController : Foundation.ObservableObject, TrinityPlayer.TrinityAudioProtocol {
   public var delegate: TrinityPlayer.TrinityAudioDelegate?
@@ -70,7 +71,7 @@ public protocol TrinityJSContext {
 }
 public protocol TrinityAudioPulseProtocol : TrinityPlayer.TrinityAudioCoreProtocol, TrinityPlayer.TrinityJSContext {
   var delegate: TrinityPlayer.TrinityAudioPulseDelegate? { get set }
-  func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: TrinityPlayer.TrinityPlayerView, playlistURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+  func render(unitId: Swift.String, rootView: UIKit.UIView, playerView: TrinityPlayer.TrinityPlayerView, playlistURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
 }
 public protocol TrinityAudioProtocol : TrinityPlayer.TrinityAudioCoreProtocol, TrinityPlayer.TrinityJSContext {
   var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
@@ -101,6 +102,7 @@ public enum TrinityParams : Swift.String {
   public init?(rawValue: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TrinityPlayerView : UIKit.UIView, WebKit.WKUIDelegate, TrinityPlayer.TrinityJSContext {
+  @objc override dynamic public func layoutSubviews()
   public func evaluate(javaScript: Swift.String)
   @objc deinit
 }
@@ -114,13 +116,19 @@ extension View {
   public func trinityObserveScrollViewContentSize(controller: TrinityPlayer.TrinityAudioController) -> some SwiftUI.View
   
 }
+@_hasMissingDesignatedInitializers final public class TrinityAudioPulseSize {
+  public static let width: CoreGraphics.CGFloat
+  public static let minimizedHeight: CoreGraphics.CGFloat
+  public static let expandedHeight: CoreGraphics.CGFloat
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers final public class TrinityAudioPulse : TrinityPlayer.TrinityAudioPulseProtocol {
   public static func newInstance() -> TrinityPlayer.TrinityAudioPulseProtocol
   weak final public var delegate: TrinityPlayer.TrinityAudioPulseDelegate?
   final public var playerId: Swift.String?
   @objc deinit
   final public func invalidate()
-  final public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: TrinityPlayer.TrinityPlayerView, playlistURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+  final public func render(unitId: Swift.String, rootView: UIKit.UIView, playerView: TrinityPlayer.TrinityPlayerView, playlistURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
   final public func evaluate(javaScript: Swift.String)
   final public func pause(playerID maybePlayerID: Swift.String?)
   final public func pauseAll()
