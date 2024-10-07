@@ -31,12 +31,6 @@ public struct TrinityAudioPlayer : SwiftUI.View {
   public func pauseAll()
   public func play()
 }
-public protocol TrinityAudioPulseDelegate : AnyObject {
-  func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, receiveError: TrinityPlayer.TrinityError)
-  func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, didReceivePostMessage: [Swift.String : Any])
-  func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, onPlayerReady playerId: Swift.String)
-  func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, onBrowseMode toggled: Swift.Bool)
-}
 public class TrinityAudioController : Foundation.ObservableObject, TrinityPlayer.TrinityAudioProtocol {
   public var delegate: TrinityPlayer.TrinityAudioDelegate?
   public var autoPlay: Swift.Bool
@@ -59,27 +53,14 @@ public class TrinityAudioController : Foundation.ObservableObject, TrinityPlayer
   @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
-public protocol TrinityAudioCoreProtocol {
-  var playerId: Swift.String? { get }
-  func play()
-  func pause(playerID: Swift.String?)
-  func pauseAll()
-  func invalidate()
-}
-public protocol TrinityJSContext {
-  func evaluate(javaScript: Swift.String)
-}
-public protocol TrinityAudioPulseProtocol : TrinityPlayer.TrinityAudioCoreProtocol, TrinityPlayer.TrinityJSContext {
-  var delegate: TrinityPlayer.TrinityAudioPulseDelegate? { get set }
-  func render(unitId: Swift.String, rootView: UIKit.UIView, playerView: TrinityPlayer.TrinityPlayerView, playlistURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
-}
-public protocol TrinityAudioProtocol : TrinityPlayer.TrinityAudioCoreProtocol, TrinityPlayer.TrinityJSContext {
-  var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
-  var autoPlay: Swift.Bool { get set }
-  func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
-}
-extension TrinityAudioProtocol {
-  public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+public enum TrinityState {
+  case main
+  case fab
+  public static func == (a: TrinityPlayer.TrinityState, b: TrinityPlayer.TrinityState) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum TrinityParams : Swift.String {
   case appName
@@ -94,54 +75,11 @@ public enum TrinityParams : Swift.String {
   case GDPR
   case GDPRConsent
   case USPrivacy
-  case themeId
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
   public init?(rawValue: Swift.String)
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TrinityPlayerView : UIKit.UIView, WebKit.WKUIDelegate, TrinityPlayer.TrinityJSContext {
-  @objc override dynamic public func layoutSubviews()
-  public func evaluate(javaScript: Swift.String)
-  @objc deinit
-}
-extension TrinityPlayerView : WebKit.WKNavigationDelegate {
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
-}
-extension View {
-  public func trinityFAB(controller: TrinityPlayer.TrinityAudioController, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?) -> some SwiftUI.View
-  
-  public func trinityObserveScrollViewContentSize(controller: TrinityPlayer.TrinityAudioController) -> some SwiftUI.View
-  
-}
-@_hasMissingDesignatedInitializers final public class TrinityAudioPulseSize {
-  public static let width: CoreGraphics.CGFloat
-  public static let minimizedHeight: CoreGraphics.CGFloat
-  public static let expandedHeight: CoreGraphics.CGFloat
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers final public class TrinityAudioPulse : TrinityPlayer.TrinityAudioPulseProtocol {
-  public static func newInstance() -> TrinityPlayer.TrinityAudioPulseProtocol
-  weak final public var delegate: TrinityPlayer.TrinityAudioPulseDelegate?
-  final public var playerId: Swift.String?
-  @objc deinit
-  final public func invalidate()
-  final public func render(unitId: Swift.String, rootView: UIKit.UIView, playerView: TrinityPlayer.TrinityPlayerView, playlistURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
-  final public func evaluate(javaScript: Swift.String)
-  final public func pause(playerID maybePlayerID: Swift.String?)
-  final public func pauseAll()
-  final public func play()
-}
-public enum TrinityState {
-  case main
-  case fab
-  public static func == (a: TrinityPlayer.TrinityState, b: TrinityPlayer.TrinityState) -> Swift.Bool
-  public var hashValue: Swift.Int {
-    get
-  }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum TrinityError : Swift.Error {
   case wrongURL
@@ -160,8 +98,28 @@ public protocol TrinityAudioDelegate : AnyObject {
 extension TrinityAudioDelegate {
   public func trinity(service: TrinityPlayer.TrinityAudioProtocol, onPlayerReady playerId: Swift.String)
 }
+public protocol TrinityAudioProtocol {
+  var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
+  var playerId: Swift.String? { get }
+  var autoPlay: Swift.Bool { get set }
+  func play()
+  func pause(playerID: Swift.String?)
+  func pauseAll()
+  func evaluate(javaScript: Swift.String)
+  func invalidate()
+  func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+}
+extension TrinityAudioProtocol {
+  public func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
+}
+extension View {
+  public func trinityFAB(controller: TrinityPlayer.TrinityAudioController, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?) -> some SwiftUI.View
+  
+  public func trinityObserveScrollViewContentSize(controller: TrinityPlayer.TrinityAudioController) -> some SwiftUI.View
+  
+}
+extension TrinityPlayer.TrinityState : Swift.Equatable {}
+extension TrinityPlayer.TrinityState : Swift.Hashable {}
 extension TrinityPlayer.TrinityParams : Swift.Equatable {}
 extension TrinityPlayer.TrinityParams : Swift.Hashable {}
 extension TrinityPlayer.TrinityParams : Swift.RawRepresentable {}
-extension TrinityPlayer.TrinityState : Swift.Equatable {}
-extension TrinityPlayer.TrinityState : Swift.Hashable {}
