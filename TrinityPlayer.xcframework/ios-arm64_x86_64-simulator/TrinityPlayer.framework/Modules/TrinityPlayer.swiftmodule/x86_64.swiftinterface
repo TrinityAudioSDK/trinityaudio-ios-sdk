@@ -101,7 +101,8 @@ public enum TrinityParams : Swift.String {
   }
   public init?(rawValue: Swift.String)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TrinityPlayerView : UIKit.UIView, WebKit.WKUIDelegate, TrinityPlayer.TrinityJSContext {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable public class TrinityPlayerView : UIKit.UIView, WebKit.WKUIDelegate, TrinityPlayer.TrinityJSContext {
+  @objc override dynamic public class func prepareForInterfaceBuilder()
   @objc override dynamic public func layoutSubviews()
   public func evaluate(javaScript: Swift.String)
   @objc deinit

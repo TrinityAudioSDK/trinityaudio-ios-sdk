@@ -212,10 +212,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
+IB_DESIGNABLE
 SWIFT_CLASS("_TtC13TrinityPlayer17TrinityPlayerView")
 @interface TrinityPlayerView : UIView <WKUIDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
++ (void)prepareForInterfaceBuilder;
 - (void)layoutSubviews;
 @end
 
@@ -454,10 +456,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
+IB_DESIGNABLE
 SWIFT_CLASS("_TtC13TrinityPlayer17TrinityPlayerView")
 @interface TrinityPlayerView : UIView <WKUIDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
++ (void)prepareForInterfaceBuilder;
 - (void)layoutSubviews;
 @end
 
