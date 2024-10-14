@@ -1,8 +1,12 @@
 # Change Log
 This document contains release notes for the TrinityAudio iOS SDK
 
+## 3.0.X
+Released on Sep 24th, 2024
+- Support Pulse player
+
 ## 2.1.X
-Released on Nov 23rd, 2023
+Released on Oct 1st, 2024
 - xCode 16 compatibility - remove Bitcode
 
 ## 2.0.X
