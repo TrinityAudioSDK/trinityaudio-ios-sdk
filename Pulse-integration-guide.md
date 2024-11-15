@@ -4,8 +4,8 @@
 This document describes how to integrate Pulse Player into a
 an iOS app as well as how to configure and control it.
 
--   Updated: Oct 31, 2024
--   Document version: 1.0
+-   Updated: Nov 14, 2024
+-   Document version: 2.0
 
 ### Integration
 
@@ -62,8 +62,8 @@ To render the player, invoke the `render` method of the TrinityAudioPulseProtoco
 | parameter     | description                                                                                                        |
 | ------------- | ------------------------------------------------------------------------------------------------------------------ |
 | unitId        | Your player unit identifier - will be provided by TrinityAudio team                                                |
-| rootView      | The view that the `playerView` overlays when expanded. If the `playerView` is inside a scroll view, set the `rootView` to the scroll view. Otherwise, it should be the `playerView`'s superview, such as the ViewController's view.
-| playerView    | The `TrinityPlayerView` that will display the content                                                               |
+| rootView      | It should be the `playerView`'s superview, such as the ViewController's view.
+| playerView    | The `TrinityPlayerView` that will display the content                                                              |
 | playlistURL   | URL which contains the playlist content                                                                            |
 | settings      | Dictionary with optional* player settings                                                                          |
 
@@ -80,7 +80,8 @@ For units that implement the sliding effect for some unit IDs provided by the Tr
 
 
 The pulse unit should open in a specific location with only part of it visible, such as the top navigation.
-Ensure you provide the correct `rootView` for the Pulse player to display the animation correctly.
+
+The SDK does not include built-in transitions for the player, allowing for customization of the sliding animation. Please listen to the event from the callback function `trinityOnBrowseMode` of the `TrinityAudioPulseDelegate` to collect the `expectedHeight` value.
 
 #### Minimum Sizes for the Pulse Player
 
@@ -90,7 +91,16 @@ Ensure you provide the correct `rootView` for the Pulse player to display the an
 
 *Pulse-Sliding Minimum Sizes:*  
 - **Width:** Min = 300 points (no maximum)  
-- **Height:** Min = 150 points, Max = 350 points  
+- **Height:** Min = 145 points, Max = 332 points  
+
+#### Autoplay
+
+The player supports autoplay if the `autoPlay` property of `TrinityAudioPulseProtocol` is set to `true`. The autoplay property *must* be set before calling the `render()` method for autoplay to work.
+When enabled, the player will play the audio once ready, without waiting for user interaction. 
+
+```swift
+myPlayer.autoPlay = true;
+```
 
 ### GDPR & US privacy support
 For details on GDPR US privacy support please go [here](https://github.com/TrinityAudioSDK/trinityaudio-ios-sdk/blob/main/Integration-guide.md#gdpr--us-privacy-support)
@@ -178,11 +188,11 @@ TrinityError - an enum with these values:
  }                                                                        
 ```
 
-- For detecting changes of the player mode ( sliding units only) animation.
+- To detect changes in the player mode (sliding units only) and update the `trinityPlayer` frame with or without animation using the `expectedHeight` value.
 
 ```swift 
 func trinity(service: TrinityAudioPulseProtocol,   
-             onBrowseMode toggled: Bool)                                              
+             onBrowseMode toggled: Bool, expectedHeight: CGFloat)                                              
 ```
 
 - For tracking player events: 
