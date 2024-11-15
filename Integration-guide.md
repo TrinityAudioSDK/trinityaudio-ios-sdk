@@ -148,7 +148,6 @@ public class TrinityAudioController : TrinityAudioProtocol {
 |------------|---------------------------------------------------------------------|
 | unitId     | Your player unit identifier - will be provided by TrinityAudio team |
 | contentURL | URL which contains the content.                                     |
-| autoPlay   | Boolean - automatically start playing the audio once ready          |
 | settings   | Dictionary with optional* player settings                           |
 | delegate   | TrinityAudioDelegate                                                |
 

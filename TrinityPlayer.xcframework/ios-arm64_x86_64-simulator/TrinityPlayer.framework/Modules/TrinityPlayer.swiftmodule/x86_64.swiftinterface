@@ -35,7 +35,7 @@ public protocol TrinityAudioPulseDelegate : AnyObject {
   func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, receiveError: TrinityPlayer.TrinityError)
   func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, didReceivePostMessage: [Swift.String : Any])
   func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, onPlayerReady playerId: Swift.String)
-  func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, onBrowseMode toggled: Swift.Bool)
+  func trinity(service: TrinityPlayer.TrinityAudioPulseProtocol, onBrowseMode toggled: Swift.Bool, expectedHeight: CoreGraphics.CGFloat)
 }
 public class TrinityAudioController : Foundation.ObservableObject, TrinityPlayer.TrinityAudioProtocol {
   public var delegate: TrinityPlayer.TrinityAudioDelegate?
@@ -61,6 +61,7 @@ public class TrinityAudioController : Foundation.ObservableObject, TrinityPlayer
 }
 public protocol TrinityAudioCoreProtocol {
   var playerId: Swift.String? { get }
+  var autoPlay: Swift.Bool { get set }
   func play()
   func pause(playerID: Swift.String?)
   func pauseAll()
@@ -75,7 +76,6 @@ public protocol TrinityAudioPulseProtocol : TrinityPlayer.TrinityAudioCoreProtoc
 }
 public protocol TrinityAudioProtocol : TrinityPlayer.TrinityAudioCoreProtocol, TrinityPlayer.TrinityJSContext {
   var delegate: TrinityPlayer.TrinityAudioDelegate? { get set }
-  var autoPlay: Swift.Bool { get set }
   func render(parentViewController: UIKit.UIViewController, unitId: Swift.String, sourceView: UIKit.UIView, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?, contentURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
 }
 extension TrinityAudioProtocol {
@@ -127,6 +127,7 @@ extension View {
   public static func newInstance() -> TrinityPlayer.TrinityAudioPulseProtocol
   weak final public var delegate: TrinityPlayer.TrinityAudioPulseDelegate?
   final public var playerId: Swift.String?
+  final public var autoPlay: Swift.Bool
   @objc deinit
   final public func invalidate()
   final public func render(unitId: Swift.String, rootView: UIKit.UIView, playerView: TrinityPlayer.TrinityPlayerView, playlistURL: Foundation.URL, settings: [Swift.String : Swift.String]?)
