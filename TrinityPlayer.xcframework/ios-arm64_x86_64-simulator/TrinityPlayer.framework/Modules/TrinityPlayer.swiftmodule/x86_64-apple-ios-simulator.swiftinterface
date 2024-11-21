@@ -6,6 +6,7 @@ import AppTrackingTransparency
 import Combine
 import CoreGraphics
 import Foundation
+import MessageUI
 import Swift
 import SwiftUI
 @_exported import TrinityPlayer
@@ -110,6 +111,7 @@ public enum TrinityParams : Swift.String {
 extension TrinityPlayerView : WebKit.WKNavigationDelegate {
   @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
 }
 extension View {
   public func trinityFAB(controller: TrinityPlayer.TrinityAudioController, fabViewTopLeftCoordinates: CoreGraphics.CGPoint?) -> some SwiftUI.View
