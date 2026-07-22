@@ -4,6 +4,7 @@ This document contains release notes for the TrinityAudio iOS SDK
 ## 3.2.x
 Released on Nov 15, 2024
 - Pulse player improvements
+- Forward `getTimeUpdateData` event
 
 ## 3.1.X
 Released on Oct 28, 2024

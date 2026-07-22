@@ -6036,20 +6036,20 @@
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/TTS\/TrinityPlayerViewController\/TrinityPlayerViewController.swift",
       "kind": "StringLiteral",
       "offset": 1659,
-      "length": 652,
-      "value": "\"    window.addEventListener('message', (event) => {\n        const {type, value} = event.data;\n        if (type === '__TRINITY_TTS__' && value.action === 'resize') {\n            const height = value.message.height.int;\n            window.webkit.messageHandlers.trinityResizeListener.postMessage(height);\n        } else if (type === 'TRINITY_TTS') {\n            const payload = {\n                origin: event.origin,\n                data: event.data\n            };\n            \n            window.webkit.messageHandlers.trinityPostMessageListener.postMessage(payload);\n        }\n    })\""
+      "length": 708,
+      "value": "\"    window.addEventListener('message', (event) => {\n        const {type, value} = event.data;\n        if (type === '__TRINITY_TTS__' && value.action === 'resize') {\n            const height = value.message.height.int;\n            window.webkit.messageHandlers.trinityResizeListener.postMessage(height);\n        } else if (type === 'TRINITY_TTS' || (type === '__TRINITY_TTS__' && value.action === 'getTimeUpdateData')) {\n            const payload = {\n                origin: event.origin,\n                data: event.data\n            };\n\n            window.webkit.messageHandlers.trinityPostMessageListener.postMessage(payload);\n        }\n    })\""
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/TTS\/TrinityPlayerViewController\/TrinityPlayerViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2346,
+      "offset": 2402,
       "length": 53,
       "value": "\"    window.TRINITY_PLAYER.api.play();\""
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/TTS\/TrinityPlayerViewController\/TrinityPlayerViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2445,
+      "offset": 2501,
       "length": 27,
       "value": "\"    play();\""
     },
@@ -6247,7 +6247,7 @@
       "kind": "StringLiteral",
       "offset": 108,
       "length": 9,
-      "value": "\"3.2.122\""
+      "value": "\"3.2.127\""
     }
   ]
 }
