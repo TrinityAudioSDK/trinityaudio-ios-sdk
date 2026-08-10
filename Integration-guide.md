@@ -184,18 +184,35 @@ trinityAudioController.autoPlay = true;
 ```
 
 
-### GDPR & US privacy support
-GDPR & US privacy consent string can be directly passed to the player as part of the `settings` dictionary.  
-These values are not mandatory, and in the case of their absence Trinity will look for these values in the IAB standard location as detailed [here](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Mobile%20In-App%20Consent%20APIs%20v1.0%20Final.md#cmp-internal-structure-defined-api-)
+### User consent support (GDPR / GPP / US Privacy)
+No integration work is needed when the app runs an IAB-compliant CMP SDK: at player creation
+Trinity reads the consent values the CMP already stored in `UserDefaults.standard` and forwards
+them verbatim to the player, which makes all consent decisions.
 
+The auto-collected keys are:
 
-The supported params are:
+- TCF v2 ([in-app spec](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#what-is-the-cmp-in-app-internal-structure-for-the-defined-api)):
+  `IABTCF_gdprApplies`, `IABTCF_TCString`, `IABTCF_PurposeConsents`,
+  `IABTCF_PurposeLegitimateInterests`, `IABTCF_VendorConsents`, `IABTCF_VendorLegitimateInterests`
+- GPP ([in-app spec](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/blob/main/Core/CMP%20API%20Specification.md#in-app-key-names)):
+  `IABGPP_HDR_GppString`, `IABGPP_GppSID` and the applicable section's stored fields
+  (`SaleOptOut`, `SharingOptOut`, `TargetedAdvertisingOptOut`, `Gpc`)
+- US Privacy (legacy, deprecated): `IABUSPrivacy_String`
+
+Consent is read once, when the player is created. **After the user changes consent in the app,
+recreate the player** so the new values are picked up.
+
+Consent values can also be passed directly as part of the `settings` dictionary — a provided
+value overrides the auto-collected one for that key:
 
 | Name                               | Description                            |
 |------------------------------------|----------------------------------------|
 | TrinityParams.USPrivacy.rawValue   | US Privacy consent string, e.g. 1-Y-   |
-| TrinityParams.GDPR.rawValue        | GDPR version 1. 1 for accepted, 0 - no |
-| TrinityParams.GDPRConsent.rawValue | GDPR version 2 consent string          |
+| TrinityParams.GDPR.rawValue        | GDPR applies. 1 - applies, 0 - no      |
+| TrinityParams.GDPRConsent.rawValue | TCF v2 consent (TC) string             |
+| TrinityParams.GPP.rawValue         | full encoded GPP string                |
+| TrinityParams.GPPSID.rawValue      | applicable GPP section ids, comma-separated, e.g. "7" |
+| TrinityParams.GPPSection.rawValue  | JSON object with the applicable section's fields, e.g. {"SaleOptOut":2,"Gpc":0} |
 
 For example: 
 ```swift

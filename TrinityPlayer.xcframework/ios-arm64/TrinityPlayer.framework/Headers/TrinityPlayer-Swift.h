@@ -332,7 +332,6 @@ SWIFT_CLASS("_TtC13TrinityPlayer17TrinityPlayerView")
 
 
 
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

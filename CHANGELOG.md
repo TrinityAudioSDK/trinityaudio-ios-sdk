@@ -1,6 +1,11 @@
 # Change Log
 This document contains release notes for the TrinityAudio iOS SDK
 
+## 3.3.x
+Released on Aug 05, 2026
+- Forward CMP-stored consent to the player: TCF v2 (`IABTCF_*`), GPP (`IABGPP_*` incl. parsed section fields) and legacy `IABUSPrivacy_String`
+- TCF v1 (`IABConsent_*`) keys are no longer read
+
 ## 3.2.x
 Released on Nov 15, 2024
 - Pulse player improvements

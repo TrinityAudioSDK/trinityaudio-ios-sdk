@@ -100,6 +100,9 @@ public enum TrinityParams : Swift.String {
   case appStoreURL
   case GDPR
   case GDPRConsent
+  case GPP
+  case GPPSID
+  case GPPSection
   case USPrivacy
   case themeId
   public init?(rawValue: Swift.String)

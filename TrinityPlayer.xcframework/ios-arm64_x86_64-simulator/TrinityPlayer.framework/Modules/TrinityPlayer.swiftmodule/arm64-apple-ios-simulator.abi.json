@@ -906,6 +906,56 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrinityPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrinityPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrinityPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrinityPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrinityPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
@@ -3308,6 +3358,126 @@
           },
           {
             "kind": "Var",
+            "name": "GPP",
+            "printedName": "GPP",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrinityPlayer.TrinityParams.Type) -> TrinityPlayer.TrinityParams",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrinityParams",
+                    "printedName": "TrinityPlayer.TrinityParams",
+                    "usr": "s:13TrinityPlayer0A6ParamsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrinityPlayer.TrinityParams.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrinityParams",
+                        "printedName": "TrinityPlayer.TrinityParams",
+                        "usr": "s:13TrinityPlayer0A6ParamsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13TrinityPlayer0A6ParamsO3GPPyA2CmF",
+            "mangledName": "$s13TrinityPlayer0A6ParamsO3GPPyA2CmF",
+            "moduleName": "TrinityPlayer",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "GPPSID",
+            "printedName": "GPPSID",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrinityPlayer.TrinityParams.Type) -> TrinityPlayer.TrinityParams",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrinityParams",
+                    "printedName": "TrinityPlayer.TrinityParams",
+                    "usr": "s:13TrinityPlayer0A6ParamsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrinityPlayer.TrinityParams.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrinityParams",
+                        "printedName": "TrinityPlayer.TrinityParams",
+                        "usr": "s:13TrinityPlayer0A6ParamsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13TrinityPlayer0A6ParamsO6GPPSIDyA2CmF",
+            "mangledName": "$s13TrinityPlayer0A6ParamsO6GPPSIDyA2CmF",
+            "moduleName": "TrinityPlayer",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "GPPSection",
+            "printedName": "GPPSection",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrinityPlayer.TrinityParams.Type) -> TrinityPlayer.TrinityParams",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrinityParams",
+                    "printedName": "TrinityPlayer.TrinityParams",
+                    "usr": "s:13TrinityPlayer0A6ParamsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrinityPlayer.TrinityParams.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrinityParams",
+                        "printedName": "TrinityPlayer.TrinityParams",
+                        "usr": "s:13TrinityPlayer0A6ParamsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13TrinityPlayer0A6ParamsO10GPPSectionyA2CmF",
+            "mangledName": "$s13TrinityPlayer0A6ParamsO10GPPSectionyA2CmF",
+            "moduleName": "TrinityPlayer",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "USPrivacy",
             "printedName": "USPrivacy",
             "children": [
@@ -5291,16 +5461,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TrinityPlayer",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -5907,6 +6067,160 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 20,
+      "value": "\"IABTCF_gdprApplies\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 443,
+      "length": 17,
+      "value": "\"IABTCF_TCString\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 494,
+      "length": 24,
+      "value": "\"IABTCF_PurposeConsents\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 563,
+      "length": 35,
+      "value": "\"IABTCF_PurposeLegitimateInterests\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 631,
+      "length": 23,
+      "value": "\"IABTCF_VendorConsents\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 698,
+      "length": 34,
+      "value": "\"IABTCF_VendorLegitimateInterests\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 993,
+      "length": 6,
+      "value": "\"GDPR\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 1029,
+      "length": 13,
+      "value": "\"GDPRConsent\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 1076,
+      "length": 21,
+      "value": "\"gdprPurposeConsents\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 1142,
+      "length": 32,
+      "value": "\"gdprPurposeLegitimateInterests\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 1207,
+      "length": 20,
+      "value": "\"gdprVendorConsents\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 1271,
+      "length": 31,
+      "value": "\"gdprVendorLegitimateInterests\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/GPPConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 22,
+      "value": "\"IABGPP_HDR_GppString\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/GPPConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 634,
+      "length": 15,
+      "value": "\"IABGPP_GppSID\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/GPPConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 826,
+      "length": 5,
+      "value": "\"gpp\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/GPPConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 856,
+      "length": 9,
+      "value": "\"gpp_sid\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/GPPConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 894,
+      "length": 12,
+      "value": "\"gppSection\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/GPPConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 964,
+      "length": 9,
+      "value": "\"IABGPP_\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/GPPConsent.swift",
+      "kind": "Array",
+      "offset": 1168,
+      "length": 105,
+      "value": "[\"SaleOptOut\", \"SharingOptOut\", \"TargetedAdvertisingOptOut\", \"Gpc\"]"
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/GPPConsent.swift",
+      "kind": "Dictionary",
+      "offset": 1607,
+      "length": 466,
+      "value": "[(\"7\", \"usnat\"), (\"8\", \"usca\"), (\"9\", \"usva\"), (\"10\", \"usco\"), (\"11\", \"usut\"), (\"12\", \"usct\"), (\"13\", \"usfl\"), (\"14\", \"usmt\"), (\"15\", \"usor\"), (\"16\", \"ustx\"), (\"17\", \"usde\"), (\"18\", \"usia\"), (\"19\", \"usne\"), (\"20\", \"usnh\"), (\"21\", \"usnj\"), (\"22\", \"ustn\"), (\"23\", \"usmn\"), (\"24\", \"usmd\"), (\"25\", \"usin\"), (\"26\", \"usky\"), (\"27\", \"usri\")]"
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/USPrivacyConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 332,
+      "length": 21,
+      "value": "\"IABUSPrivacy_String\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/USPrivacyConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 492,
+      "length": 11,
+      "value": "\"USPrivacy\""
+    },
+    {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/SwiftUI\/TrinityAudioController.swift",
       "kind": "BooleanLiteral",
       "offset": 318,
@@ -6133,28 +6447,49 @@
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/TrinityParams.swift",
       "kind": "StringLiteral",
-      "offset": 717,
+      "offset": 999,
       "length": 6,
       "value": "\"GDPR\""
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/TrinityParams.swift",
       "kind": "StringLiteral",
-      "offset": 855,
+      "offset": 1137,
       "length": 13,
       "value": "\"GDPRConsent\""
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/TrinityParams.swift",
       "kind": "StringLiteral",
-      "offset": 1017,
+      "offset": 1239,
+      "length": 5,
+      "value": "\"gpp\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/TrinityParams.swift",
+      "kind": "StringLiteral",
+      "offset": 1342,
+      "length": 9,
+      "value": "\"gpp_sid\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/TrinityParams.swift",
+      "kind": "StringLiteral",
+      "offset": 1470,
+      "length": 12,
+      "value": "\"gppSection\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/TrinityParams.swift",
+      "kind": "StringLiteral",
+      "offset": 1631,
       "length": 11,
       "value": "\"USPrivacy\""
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/TrinityParams.swift",
       "kind": "StringLiteral",
-      "offset": 1053,
+      "offset": 1667,
       "length": 9,
       "value": "\"themeId\""
     },
@@ -6222,32 +6557,11 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/PrivacyConsentService.swift",
-      "kind": "StringLiteral",
-      "offset": 2691,
-      "length": 26,
-      "value": "\"IABConsent_ConsentString\""
-    },
-    {
-      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/PrivacyConsentService.swift",
-      "kind": "StringLiteral",
-      "offset": 2752,
-      "length": 26,
-      "value": "\"IABConsent_SubjectToGDPR\""
-    },
-    {
-      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/PrivacyConsentService.swift",
-      "kind": "StringLiteral",
-      "offset": 2815,
-      "length": 21,
-      "value": "\"IABUSPrivacy_String\""
-    },
-    {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Version.swift",
       "kind": "StringLiteral",
       "offset": 108,
       "length": 9,
-      "value": "\"3.2.127\""
+      "value": "\"3.2.128\""
     }
   ]
 }
