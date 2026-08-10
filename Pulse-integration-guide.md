@@ -102,8 +102,8 @@ When enabled, the player will play the audio once ready, without waiting for use
 myPlayer.autoPlay = true;
 ```
 
-### GDPR & US privacy support
-For details on GDPR US privacy support please go [here](https://github.com/TrinityAudioSDK/trinityaudio-ios-sdk/blob/main/Integration-guide.md#gdpr--us-privacy-support)
+### User consent support (GDPR / GPP / US Privacy)
+For details on user consent support please go [here](https://github.com/TrinityAudioSDK/trinityaudio-ios-sdk/blob/main/Integration-guide.md#user-consent-support-gdpr--gpp--us-privacy)
 
 ### Player API
 
