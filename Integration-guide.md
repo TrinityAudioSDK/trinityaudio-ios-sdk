@@ -4,8 +4,8 @@
 This document describes how to integrate the Trinity Audio Player into
 an iOS app as well as how to configure and control it.
 
-- Updated: Nov 28, 2023
-- Document version: 2.0
+- Updated: Aug 10, 2026
+- Document version: 2.1
 
 ### Integration
 

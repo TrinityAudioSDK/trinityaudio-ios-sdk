@@ -1,6 +1,11 @@
 # Change Log
 This document contains release notes for the TrinityAudio iOS SDK
 
+## 3.4.x
+Released on Aug 07, 2026
+- Added support for chapters in the TTS player
+- Added support for the SDK feature set, so the player shows only features the SDK supports
+
 ## 3.3.x
 Released on Aug 05, 2026
 - Forward CMP-stored consent to the player: TCF v2 (`IABTCF_*`), GPP (`IABGPP_*` incl. parsed section fields) and legacy `IABUSPrivacy_String`

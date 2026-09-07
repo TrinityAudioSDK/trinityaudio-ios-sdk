@@ -906,6 +906,26 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrinityPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrinityPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6006,7 +6026,14 @@
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/JS\/WebPlayerScripts.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
+      "offset": 1458,
+      "length": 90,
+      "value": "\"    document.dispatchEvent(new KeyboardEvent('keydown', {key: 'Escape'}));\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/JS\/WebPlayerScripts.swift",
+      "kind": "StringLiteral",
+      "offset": 1594,
       "length": 80,
       "value": "\"    window.removeEventListener('message', messageEventListener);\""
     },
@@ -6048,23 +6075,30 @@
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/TTS\/TrinityAudio.swift",
       "kind": "FloatLiteral",
-      "offset": 890,
+      "offset": 941,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/TTS\/TrinityAudio.swift",
       "kind": "FloatLiteral",
-      "offset": 894,
+      "offset": 945,
       "length": 4,
       "value": "24.0"
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/TTS\/TrinityAudio.swift",
       "kind": "BooleanLiteral",
-      "offset": 1104,
+      "offset": 1155,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/SDKFeatures.swift",
+      "kind": "StringLiteral",
+      "offset": 365,
+      "length": 13,
+      "value": "\"SDKFeatures\""
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/TCFConsent.swift",
@@ -6382,6 +6416,20 @@
       "value": "\"browseModeToggleView\""
     },
     {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Extensions\/PlayerEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 380,
+      "length": 18,
+      "value": "\"chaptersMenuOpen\""
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Extensions\/PlayerEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 434,
+      "length": 19,
+      "value": "\"chaptersMenuClose\""
+    },
+    {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/TrinityParams.swift",
       "kind": "StringLiteral",
       "offset": 174,
@@ -6561,7 +6609,7 @@
       "kind": "StringLiteral",
       "offset": 108,
       "length": 9,
-      "value": "\"3.2.128\""
+      "value": "\"3.2.129\""
     }
   ]
 }
