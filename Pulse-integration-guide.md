@@ -4,8 +4,8 @@
 This document describes how to integrate Pulse Player into a
 an iOS app as well as how to configure and control it.
 
--   Updated: Nov 14, 2024
--   Document version: 2.0
+-   Updated: Aug 10, 2026
+-   Document version: 2.1
 
 ### Integration
 
