@@ -7,5 +7,4 @@ framework module TrinityPlayer {
 
 module TrinityPlayer.Swift {
   header "TrinityPlayer-Swift.h"
-  requires objc
 }

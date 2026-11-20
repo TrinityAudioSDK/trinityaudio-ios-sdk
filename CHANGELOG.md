@@ -1,8 +1,12 @@
 # Change Log
 This document contains release notes for the TrinityAudio iOS SDK
 
+## 3.5.x
+Released on Nov 20, 2026
+- Minimum supported iOS version is now 15.0 (was 14.0)
+
 ## 3.4.x
-Released on Aug 07, 2026
+Released on Sep 07, 2026
 - Added support for chapters in the TTS player
 - Added support for the SDK feature set, so the player shows only features the SDK supports
 
