@@ -105,6 +105,9 @@ myPlayer.autoPlay = true;
 ### User consent support (GDPR / GPP / US Privacy)
 For details on user consent support please go [here](https://github.com/TrinityAudioSDK/trinityaudio-ios-sdk/blob/main/Integration-guide.md#user-consent-support-gdpr--gpp--us-privacy)
 
+Consent changes apply to the running Pulse player the same way. If you pass consent in `settings`,
+call `updateConsent` on the Pulse player after the user changes consent.
+
 ### Player API
 
 To pause the player's audio use the `pause()` method of `TrinityAudioPulseProtocol`. 
