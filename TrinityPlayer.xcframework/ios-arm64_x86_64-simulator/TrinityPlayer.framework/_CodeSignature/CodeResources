@@ -18,43 +18,43 @@
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		TahnoYzpW47DijO+ABbgj7R49Tw=
+		7IxEU8pIwHQsVqutCdLYmE0RTPE=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0rQ59nnV5kdom2hJuqrhUnKewO0=
+		8Nwm43RstK1G0XUSq7DqiBkWB68=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dave0LMJU9hZ9y3joNh03Nl/5rE=
+		EQ2JqK5FgFxKurFUGp1P8byEkFQ=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0rQ59nnV5kdom2hJuqrhUnKewO0=
+		8Nwm43RstK1G0XUSq7DqiBkWB68=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uLX8VtQ29yOx4bqi+Q2V4d/LuWg=
+		6yUloO4KhHk26+7YiZmyTbZua00=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		TahnoYzpW47DijO+ABbgj7R49Tw=
+		7IxEU8pIwHQsVqutCdLYmE0RTPE=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lEAU19M9fXiCr5S8Q2bsSgXpbaE=
+		L1tYyw0fWDuEndmUNnIdhnqpEms=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QG5tvpwKSY1dRDceGjS164XFkZs=
+		/33GfdcVA1hzAf+0VKrqktz7OlI=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lEAU19M9fXiCr5S8Q2bsSgXpbaE=
+		L1tYyw0fWDuEndmUNnIdhnqpEms=
 		</data>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5k4fci54EoBp3u06AvjC0xe2EkQ=
+		rbNDlBEnliemJz8Y8VZbME90Jbg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,70 +93,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IlXFon4+qCSOx7Qsg7NmZje1PFTzN+C7bfExX9zHjbA=
+			a4VXSvEsmVn7SJy4s4lMEWZLrozPr/9//km6RTJt/Nk=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			exp6jp31ut5zkfHYvwHl20ouElvjkFF5/Av+wCtW/7E=
+			v9pgy4qNWPLpqdlcHuUTU1U2iwDlcAms5qzFEwIKYBE=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xOA761IG7o2ulxq5dC893Y9urmrNUiwUa1YjJODodN0=
+			e0oHGTh09R9QRpINEX17sOnjHdLbkCnYTFO407L4tCg=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			exp6jp31ut5zkfHYvwHl20ouElvjkFF5/Av+wCtW/7E=
+			v9pgy4qNWPLpqdlcHuUTU1U2iwDlcAms5qzFEwIKYBE=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Xg9JIvNknuzvmVOvjpwP7o7g4ZtuSl0YtwU1UHI5Lc=
+			OqlaJ5JRdz3GfTt+nDmsXhBR4nommcz97N+1LjCSN1M=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IlXFon4+qCSOx7Qsg7NmZje1PFTzN+C7bfExX9zHjbA=
+			a4VXSvEsmVn7SJy4s4lMEWZLrozPr/9//km6RTJt/Nk=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EqKaiZgVjecxnMJa6ecanbpe4np2Ra1XgGY13Ptw/uE=
+			VYcKJfuBFr8Ze6gsD5ZvFNVWcCiZnJmSsJ1BXm8BPsU=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LHbLWDz+7S7HD2htJh8x8/LgXetik07tiYPdqadjvSY=
+			b9Zrrys3xfljYcGya2okr7Q1WIDB45GChKuHgtsya6I=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EqKaiZgVjecxnMJa6ecanbpe4np2Ra1XgGY13Ptw/uE=
+			VYcKJfuBFr8Ze6gsD5ZvFNVWcCiZnJmSsJ1BXm8BPsU=
 			</data>
 		</dict>
 		<key>Modules/TrinityPlayer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7JT2R3Bmr8W0A0Ptw86vgy6+AvBzBqALvS81eY3LLZU=
+			jcNv/GqdcS6oKQlvgHgvW5486TkuwPqfLT+lHK7g/1U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

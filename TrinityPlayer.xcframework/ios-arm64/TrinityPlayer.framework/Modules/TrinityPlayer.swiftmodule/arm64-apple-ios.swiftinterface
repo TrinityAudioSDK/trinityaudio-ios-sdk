@@ -35,6 +35,7 @@ import _SwiftConcurrencyShims
   public func pause(playerID maybePlayerID: Swift::String?)
   public func pauseAll()
   public func play()
+  public func updateConsent(settings: [Swift::String : Swift::String]?)
 }
 public protocol TrinityAudioPulseDelegate : AnyObject {
   func trinity(service: any TrinityPlayer::TrinityAudioPulseProtocol, receiveError: TrinityPlayer::TrinityError)
@@ -62,6 +63,7 @@ public class TrinityAudioController : Foundation::ObservableObject, TrinityPlaye
   public func pause(playerID: Swift::String?)
   public func pauseAll()
   public func play()
+  public func updateConsent(settings: [Swift::String : Swift::String]?)
   public func invalidate()
   @objc deinit
   public typealias ObjectWillChangePublisher = Combine::ObservableObjectPublisher
@@ -73,6 +75,10 @@ public protocol TrinityAudioCoreProtocol {
   func pause(playerID: Swift::String?)
   func pauseAll()
   func invalidate()
+  func updateConsent(settings: [Swift::String : Swift::String]?)
+}
+extension TrinityPlayer::TrinityAudioCoreProtocol {
+  public func updateConsent()
 }
 public protocol TrinityJSContext {
   func evaluate(javaScript: Swift::String)
@@ -146,6 +152,7 @@ extension SwiftUICore::View {
   final public func pause(playerID maybePlayerID: Swift::String?)
   final public func pauseAll()
   final public func play()
+  final public func updateConsent(settings: [Swift::String : Swift::String]?)
 }
 public enum TrinityState {
   case main

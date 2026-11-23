@@ -822,6 +822,54 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateConsent",
+            "printedName": "updateConsent(settings:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13TrinityPlayer0A5AudioC13updateConsent8settingsySDyS2SGSg_tF",
+            "mangledName": "$s13TrinityPlayer0A5AudioC13updateConsent8settingsySDyS2SGSg_tF",
+            "moduleName": "TrinityPlayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -908,6 +956,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrinityPlayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "TrinityPlayer",
         "declAttributes": [
@@ -1805,6 +1863,54 @@
           },
           {
             "kind": "Function",
+            "name": "updateConsent",
+            "printedName": "updateConsent(settings:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13TrinityPlayer0A15AudioControllerC13updateConsent8settingsySDyS2SGSg_tF",
+            "mangledName": "$s13TrinityPlayer0A15AudioControllerC13updateConsent8settingsySDyS2SGSg_tF",
+            "moduleName": "TrinityPlayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "invalidate",
             "printedName": "invalidate()",
             "children": [
@@ -2171,6 +2277,81 @@
             "sugared_genericSig": "<Self where Self : TrinityPlayer.TrinityAudioCoreProtocol>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateConsent",
+            "printedName": "updateConsent(settings:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13TrinityPlayer0A17AudioCoreProtocolP13updateConsent8settingsySDyS2SGSg_tF",
+            "mangledName": "$s13TrinityPlayer0A17AudioCoreProtocolP13updateConsent8settingsySDyS2SGSg_tF",
+            "moduleName": "TrinityPlayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : TrinityPlayer.TrinityAudioCoreProtocol>",
+            "sugared_genericSig": "<Self where Self : TrinityPlayer.TrinityAudioCoreProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateConsent",
+            "printedName": "updateConsent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13TrinityPlayer0A17AudioCoreProtocolPAAE13updateConsentyyF",
+            "mangledName": "$s13TrinityPlayer0A17AudioCoreProtocolPAAE13updateConsentyyF",
+            "moduleName": "TrinityPlayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : TrinityPlayer.TrinityAudioCoreProtocol>",
+            "sugared_genericSig": "<Self where Self : TrinityPlayer.TrinityAudioCoreProtocol>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -4912,6 +5093,55 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateConsent",
+            "printedName": "updateConsent(settings:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13TrinityPlayer0A10AudioPulseC13updateConsent8settingsySDyS2SGSg_tF",
+            "mangledName": "$s13TrinityPlayer0A10AudioPulseC13updateConsent8settingsySDyS2SGSg_tF",
+            "moduleName": "TrinityPlayer",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -6083,21 +6313,21 @@
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/TTS\/TrinityAudio.swift",
       "kind": "FloatLiteral",
-      "offset": 941,
+      "offset": 991,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/TTS\/TrinityAudio.swift",
       "kind": "FloatLiteral",
-      "offset": 945,
+      "offset": 995,
       "length": 4,
       "value": "24.0"
     },
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/TTS\/TrinityAudio.swift",
       "kind": "BooleanLiteral",
-      "offset": 1155,
+      "offset": 1205,
       "length": 5,
       "value": "false"
     },
@@ -6263,6 +6493,27 @@
       "value": "\"USPrivacy\""
     },
     {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/ConsentObserver.swift",
+      "kind": "FloatLiteral",
+      "offset": 707,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/ConsentObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 887,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/Internal\/Core\/Services\/Consent\/ConsentObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 928,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/SwiftUI\/TrinityAudioController.swift",
       "kind": "BooleanLiteral",
       "offset": 318,
@@ -6279,7 +6530,7 @@
     {
       "filePath": "\/Users\/administrator\/build\/workspace\/trinity-sdk-ios-build\/iOS\/TrinityPlayer\/Trinity\/SwiftUI\/TrinityAudioController.swift",
       "kind": "BooleanLiteral",
-      "offset": 810,
+      "offset": 856,
       "length": 5,
       "value": "false"
     },
@@ -6617,7 +6868,7 @@
       "kind": "StringLiteral",
       "offset": 108,
       "length": 9,
-      "value": "\"3.5.135\""
+      "value": "\"3.5.136\""
     }
   ]
 }

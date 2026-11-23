@@ -199,8 +199,10 @@ The auto-collected keys are:
   (`SaleOptOut`, `SharingOptOut`, `TargetedAdvertisingOptOut`, `Gpc`)
 - US Privacy (legacy, deprecated): `IABUSPrivacy_String`
 
-Consent is read once, when the player is created. **After the user changes consent in the app,
-recreate the player** so the new values are picked up.
+Consent is read when the player is created and kept current while it runs: when the user changes
+consent in the app and the CMP stores the new values, the SDK applies them to the running player
+within about half a second. **Playback continues** — no need to recreate the player; the new
+consent applies from the next ad request.
 
 Consent values can also be passed directly as part of the `settings` dictionary — a provided
 value overrides the auto-collected one for that key:
@@ -222,6 +224,13 @@ let settings : [String: String] = [
     TrinityParams.GDPRConsent.rawValue : "CPSzMzJPTeGtxADABCENB_CoAP_AAEJAAAAADGwBAAGABPADCAY0BjYAgADAAngBhAMaAAA.YAAABBBBB"
 ]
 player.render(parentViewController, unitId, sourceView, fabViewTopLeftCoordinates, contentURL, settings)
+```
+
+If you pass consent in `settings`, the SDK can't see when it changes: after the user changes
+consent, call `updateConsent` with the new values. They replace the consent values given to
+`render`, with the same override rules, and apply to the running player:
+```swift
+player.updateConsent(settings: [TrinityParams.GDPRConsent.rawValue: newTCString])
 ```
 
 Note: If you would like to utilize IDFA for ad tracking (for monetized player only) - add a request for IDFA consent into `Info.plist`.   

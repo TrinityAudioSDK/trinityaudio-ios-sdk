@@ -1,6 +1,11 @@
 # Change Log
 This document contains release notes for the TrinityAudio iOS SDK
 
+## 3.6.x
+Released on Nov 20, 2026
+- A consent change made while the TTS or Pulse player runs (TCF v2 / GPP / US Privacy) now applies without recreating the player — playback continues
+- Added `updateConsent(settings:)` for apps that pass consent in `settings`
+
 ## 3.5.x
 Released on Nov 20, 2026
 - Minimum supported iOS version is now 15.0 (was 14.0)
